@@ -1,0 +1,650 @@
+
+function Return()
+{
+	this.nCode=0;
+	this.getCode=function()
+	{
+		return this.nCode;
+	}
+	this.setCode=function(nCode)
+	{
+		this.nCode=nCode;
+	}
+	this.strText="";
+	this.getText=function()
+	{
+		return this.strText;
+	}
+	this.setText=function(strText)
+	{
+		this.strText=strText;
+	}
+	this.strInfo="";
+	this.getInfo=function()
+	{
+		return this.strInfo;
+	}
+	this.setInfo=function(strInfo)
+	{
+		this.strInfo=strInfo;
+	}
+}
+
+function HttpClient(strServletURL)
+{
+	this.strServletURL	=strServletURL;
+	
+	this.SERVICENAME_KEY = "strServiceName";
+	this.TRANSNAME_KEY   = "strTransName";
+	
+	//getURL
+	this.getServletURL	=function()
+	{
+		return this.strServletURL;
+	}
+
+	var getCDONode=function(httpRequest)
+	{
+		var domXML=httpRequest.responseXML;
+		return domXML.documentElement;
+	}
+
+	var thisPointer=this;
+
+	var componentToRequest=function(component,nameRegex,cdoRequest)
+	{
+		//验证组件名称是否合法
+		if(nameRegex.test(component.name)==false)
+		{//不合法
+			throw "Invalid component's name";
+			return -1;
+		}
+
+		//组件名称合法
+		var strDataType=component.cdodatatype;
+		if(typeof(strDataType)=="undefined")
+		{//组件没有定义jcpdatatype，丢弃
+			throw "cdodatatype undefined";
+			return -1;
+		}
+
+		//检验输入值
+		var strDataRegex=component.cdodataregex;
+		if(typeof(strDataRegex)!="undefined")
+		{//需要校验
+			if(strDataRegex.test(component.value)==false)
+			{//不合法
+				if(onVerifyFailed!=null)
+				{
+					onVerifyFailed(component);
+					return -1;
+				}
+			}
+		}
+		
+		//定义了datatype
+		switch(strDataType.toLowerCase())
+		{
+			case "byte":
+				cdoRequest.setByteValue(component.name,component.value);
+				break;
+			case "short":
+				cdoRequest.setShortValue(component.name,component.value);
+				break;
+			case "integer":
+				cdoRequest.setIntegerValue(component.name,component.value);
+				break;
+			case "long":
+				cdoRequest.setLongValue(component.name,component.value);
+				break;
+			case "float":
+				cdoRequest.setFloatValue(component.name,component.value);
+				break;
+			case "double":
+				cdoRequest.setDoubleValue(component.name,component.value);
+				break;
+			case "string":
+				cdoRequest.setStringValue(component.name,component.value);
+				break;
+			case "date":
+				cdoRequest.setDateValue(component.name,component.value);
+				break;
+			case "time":
+				cdoRequest.setTimeValue(component.name,component.value);
+				break;
+			case "datetime":
+				cdoRequest.setDateTimeValue(component.name,component.value);
+				break;
+			default:
+				break;
+		}
+		
+		return 0;
+	}
+	
+	//将Form的输入转换成Request
+	var formToRequest=function(form,cdoRequest)
+	{
+		var components = form.elements;
+
+		var nameRegex = /([a-z]|[A-Z])([a-z]|[A-Z]|[0-9])*/;
+		for(var i=0;i<components.length;i=i+1)
+		{
+			var strTagName=components[i].tagName.toLowerCase();
+			if(strTagName=="input")
+			{
+				switch(components[i].type)
+				{
+					case "checkbox":
+					case "radio":
+						if(components[i].checked==true)
+						{
+							if(componentToRequest(components[i],nameRegex,cdoRequest)==-1)
+							{
+								return -1;
+							}
+						}
+						break;
+					case "hidden":
+					case "password":
+					case "text":
+						if(componentToRequest(components[i],nameRegex,cdoRequest)==-1)
+						{
+							return -1;
+						}
+						break;
+					case "file":
+						break;
+				}
+				continue;
+			}
+			else if(strTagName=="button" || strTagName=="select" || strTagName=="textarea")
+			{
+				if(componentToRequest(components[i],nameRegex,cdoRequest)==-1)
+				{
+					return -1;
+				}
+			}
+		}
+		return 0;
+	}
+
+	//执行Form提交的事务请求
+	this.submit = function(strServiceName,strTransName,form,cdoResponse,bCache)
+	{
+		//创建Request
+		var cdoRequest=new CDO();
+		if(formToRequest(form,cdoRequest)!=0)
+		{
+			return null;
+		}
+
+		//创建并初始化HttpClient
+		var httpRequest=null;
+		while(true)
+		{
+			if(window.XMLHttpRequest)
+			{ 
+				httpRequest = new XMLHttpRequest();
+			}
+			else if(window.ActiveXObject)
+			{
+				httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			var strServiceName=cdoRequest.getStringValue("strServiceName");
+			var strTransName=cdoRequest.getStringValue("strTransName");
+
+			//发送HTTP请求
+			var strParameter="strServiceName="+strServiceName+"&strTransName="+strTransName;
+			try
+			{
+				var strRequest = cdoRequest.toXML();
+				var strURL = encodeURI(this.strServletURL+"?"+strParameter) + "&$$CDORequest$$=" + encodeURIComponent(strRequest);
+				//CDORequest生成的URL的串的长度,如果大于1KB,则走POST,否则走GET(URL最大长度为2048字符(2KB))
+				if(strURL.length > 1024 || !(bCache==true))
+				{
+					httpRequest.open('POST',encodeURI(this.strServletURL+"?"+strParameter),false);
+					httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+					httpRequest.send("$$CDORequest$$="+encodeURIComponent(strRequest));
+				}
+				else
+				{
+					httpRequest.open('GET',strURL,false);
+					httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+					if(!(bCache==true))
+					{
+						httpRequest.setRequestHeader('If-Modified-Since','0');
+					}
+					httpRequest.send(null);
+				}
+			}
+			catch(e)
+			{
+				return null;
+			}
+			if(httpRequest.status==200 || httpRequest.status==0)
+			{//成功
+				break;
+			}
+			if(httpRequest.status>10000)
+			{//浏览器异常，重试
+				continue;
+			}
+			//失败
+			return null;
+		}
+
+		try
+		{
+			var nodes=httpRequest.responseXML.documentElement.childNodes;
+	
+			var cdoReturn=new CDO();
+			cdoReturn.fromXML(nodes[0].childNodes[0]);
+			if(nodes.length>1)
+			{
+				cdoResponse.fromXML(nodes[1].childNodes[0]);
+			}
+			var ret=new Return();
+			ret.nCode=cdoReturn.getIntegerValue("nCode");
+			ret.strInfo=cdoReturn.getStringValue("strInfo");
+			ret.strText=cdoReturn.getStringValue("strText");
+		}
+		catch(e)
+		{
+			return null;
+		}
+		
+		return ret;
+	}
+
+	//加载CDO XML文件,返回CDO对象
+	this.loadXML=function(strURL,bCache)
+	{
+		var httpRequest=null;
+		while(true)
+		{
+			if(window.XMLHttpRequest)
+			{ 
+				httpRequest	=new XMLHttpRequest();
+			}
+			else if(window.ActiveXObject)
+			{
+				httpRequest	=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			//发送HTTP请求
+			try
+			{
+				httpRequest.open('GET',strURL,false);
+				httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+				if(!(bCache==true))
+				{
+					httpRequest.setRequestHeader('If-Modified-Since','0');
+				}
+				httpRequest.send(null);
+			}
+			catch(e)
+			{
+				return null;
+			}
+			if(httpRequest.status==200 || httpRequest.status==0)
+			{//成功
+				break;
+			}
+			if(httpRequest.status>10000)
+			{//浏览器异常，重试
+				continue;
+			}
+			//失败
+			return null;
+		}
+
+		try
+		{
+			var cdoResponse=new CDO();
+			var node	=getCDONode(httpRequest);
+			cdoResponse.fromXML(node);
+			return cdoResponse;
+		}
+		catch (e)
+		{
+			return null;
+		}
+
+	}
+
+	//加载Text
+	this.loadText=function(strURL,bCache)
+	{
+		var httpRequest=null;
+		while(true)
+		{
+			if(window.XMLHttpRequest)
+			{ 
+				httpRequest	=new XMLHttpRequest();
+			}
+			else if(window.ActiveXObject)
+			{
+				httpRequest	=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			//发送HTTP请求
+			try
+			{
+				httpRequest.open('GET',strURL,false);
+				httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+				if(!(bCache==true))
+				{
+					httpRequest.setRequestHeader('If-Modified-Since','0');
+				}
+				httpRequest.send(null);
+			}
+			catch(e)
+			{
+				return null;
+			}
+			if(httpRequest.status==200 || httpRequest.status==0)
+			{//成功
+				break;
+			}
+			if(httpRequest.status>10000)
+			{//浏览器异常，重试
+				continue;
+			}
+			//失败
+			return null;
+		}
+
+		var strText=httpRequest.responseText;
+
+		return strText;
+	}
+
+	//异步加载文本，onTextLoaded(strText/*失败为null*/)
+	this.raiseLoadText=function(strURL,bCache,onTextLoaded)
+	{
+		var httpRequest=null;
+		if(window.XMLHttpRequest)
+		{ 
+		    httpRequest	=new XMLHttpRequest();
+		}
+		else if(window.ActiveXObject)
+		{
+		    httpRequest	=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		if(onTextLoaded!=null && onTextLoaded!=undefined)
+		{
+			httpRequest.onreadystatechange=function()
+			{
+				if(httpRequest.readyState!=4)
+				{
+					return;
+				}
+
+				//执行结束
+				if(httpRequest.status!=200 && httpRequest.status!=0)
+				{//执行发生错误
+					onTextLoaded(null);
+					return;
+				}
+
+				//执行成功
+				var strText=httpRequest.responseText;
+				onTextLoaded(strText);
+			}
+		}
+
+		//发送HTTP请求
+		try
+		{
+			httpRequest.open('GET',strURL,true);
+			httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+			if(!(bCache==true))
+			{
+				httpRequest.setRequestHeader('If-Modified-Since','0');
+			}
+			httpRequest.send(null);
+		}
+		catch(e)
+		{
+		}
+	}
+
+	//jsonp 回调
+	this.jsonpCallback=function(strResult)
+	{
+		var cdoResult=new CDO();
+		cdoResult.fromXMLText(strResult);
+		var cdoReturn=cdoResult.getCDOValue("cdoReturn");
+		var ret=new Return();
+		ret.nCode=cdoReturn.getIntegerValue("nCode");
+		ret.strInfo=cdoReturn.getStringValue("strInfo");
+		ret.strText=cdoReturn.getStringValue("strText");
+		
+		var cdoResponse=cdoResult.getCDOValue("cdoResponse");
+		var callBackName=cdoResponse.getStringValue("strCallBack");
+		if(callBackName==null)
+		{
+			return;
+		}
+		
+		for (var i in window)
+		{ 
+			if (i === callBackName) 
+			{　　
+				window[i](cdoResponse,ret);
+				break;　　　　 
+			}
+		}　　
+	}
+	
+	//jsonp执行事务
+	this.jsonpTrans=function(cdoRequest,strServletURL,onTransHandled)
+	{    
+		var strServiceName=cdoRequest.getStringValue("strServiceName");
+		var strTransName=cdoRequest.getStringValue("strTransName");
+		cdoRequest.setBooleanValue("bJSONP",true);
+		cdoRequest.setStringValue("strCallBack",onTransHandled);
+		var strParameter="strServiceName="+strServiceName+"&strTransName="+strTransName;
+		var strRequest = cdoRequest.toXML();
+		var strURL = encodeURI(strServletURL+"?"+strParameter) + "&$$CDORequest$$=" + encodeURIComponent(strRequest);
+
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';
+		ds.src = strURL;
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]).appendChild(ds);
+	}
+
+	
+	var bHandlingTrans=false;
+	//执行事务
+	//bCache默认为false
+	this.handleTrans=function(cdoRequest,cdoResponse,bCache)
+	{
+		if(bHandlingTrans==true)
+		{
+			return Return.valueOf(-1,"Please do not click frequently");
+		}
+		
+		bHandlingTrans=true;
+		
+		var httpRequest=null;
+		while(true)
+		{
+			if(window.XMLHttpRequest)
+			{ 
+				httpRequest	=new XMLHttpRequest();
+			}
+			else if(window.ActiveXObject)
+			{
+				httpRequest	=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			var strServiceName=cdoRequest.getStringValue("strServiceName");
+			var strTransName=cdoRequest.getStringValue("strTransName");
+
+			//发送HTTP请求
+			var strParameter="strServiceName="+strServiceName+"&strTransName="+strTransName;
+			try
+			{
+				var strRequest = cdoRequest.toXML();
+				var strURL = encodeURI(this.strServletURL+"?"+strParameter) + "&$$CDORequest$$=" + encodeURIComponent(strRequest);
+				//CDORequest生成的URL的串的长度,如果大于1KB,则走POST,否则走GET(URL最大长度为2048字符(2KB))
+				if(strURL.length > 1024 || !(bCache==true))
+				{
+					httpRequest.open('POST',encodeURI(this.strServletURL+"?"+strParameter),false);
+					httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+					httpRequest.send("$$CDORequest$$="+encodeURIComponent(strRequest));
+				}
+				else
+				{
+					httpRequest.open('GET',strURL,false);
+					httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+					if(!(bCache==true))
+					{
+						httpRequest.setRequestHeader('If-Modified-Since','0');
+					}
+					httpRequest.send(null);
+				}
+			}
+			catch(e)
+			{
+				bHandlingTrans=false;
+				
+				return null;
+			}
+			if(httpRequest.status==200 || httpRequest.status==0)
+			{//成功
+				break;
+			}
+			if(httpRequest.status>10000)
+			{//浏览器异常，重试
+				continue;
+			}
+			bHandlingTrans=false;
+			
+			//失败
+			return null;
+		}
+
+		var ret=new Return();
+		try
+		{
+			var nodes=httpRequest.responseXML.documentElement.childNodes;
+	
+			var cdoReturn=new CDO();
+			cdoReturn.fromXML(nodes[0].childNodes[0]);
+			if(nodes.length>1)
+			{
+				cdoResponse.fromXML(nodes[1].childNodes[0]);
+			}
+			
+			ret.nCode=cdoReturn.getIntegerValue("nCode");
+			ret.strInfo=cdoReturn.getStringValue("strInfo");
+			ret.strText=cdoReturn.getStringValue("strText");
+		}
+		catch(e)
+		{
+			bHandlingTrans=false;
+			
+			return null;
+		}
+		bHandlingTrans=false;
+		
+		return ret;
+	}
+
+	//异步执行事务
+	//onTransHandled=function(cdoResponse,ret)
+	//bCache默认为false
+	this.raiseTrans=function(cdoRequest,bCache,onTransHandled)
+	{    
+		var httpRequest=null;
+		if(window.XMLHttpRequest)
+		{ 
+		    httpRequest	=new XMLHttpRequest();
+		}
+		else if(window.ActiveXObject)
+		{
+		    httpRequest	=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		if(onTransHandled!=null && onTransHandled!=undefined)
+		{
+			httpRequest.onreadystatechange=function()
+			{
+				if(httpRequest.readyState!=4)
+				{
+					return;
+				}
+
+				//执行结束
+				if(httpRequest.status!=200 && httpRequest.status!=0)
+				{//执行发生错误
+					return;
+				}
+
+				//执行成功
+				var cdoResponse=new CDO();
+				var ret=new Return();
+				try
+				{
+					var nodes=httpRequest.responseXML.documentElement.childNodes;
+			
+					var cdoReturn=new CDO();
+					cdoReturn.fromXML(nodes[0].childNodes[0]);
+					if(nodes.length>1)
+					{
+						cdoResponse.fromXML(nodes[1].childNodes[0]);
+					}
+					
+					ret.nCode=cdoReturn.getIntegerValue("nCode");
+					ret.strInfo=cdoReturn.getStringValue("strInfo");
+					ret.strText=cdoReturn.getStringValue("strText");
+				}
+				catch(e)
+				{
+					return;
+				}
+				
+				onTransHandled(cdoResponse,ret);
+			}
+		}
+
+		var strServiceName=cdoRequest.getStringValue("strServiceName");
+		var strTransName=cdoRequest.getStringValue("strTransName");
+
+		//发送HTTP请求
+		var strParameter="strServiceName="+strServiceName+"&strTransName="+strTransName;
+		try
+		{
+			var strRequest = cdoRequest.toXML();
+			var strURL = encodeURI(this.strServletURL+"?"+strParameter) + "&$$CDORequest$$=" + encodeURIComponent(strRequest);
+			//CDORequest生成的URL的串的长度,如果大于1KB,则走POST,否则走GET(URL最大长度为2048字符(2KB))
+			if(strURL.length > 1024 || !(bCache==true))
+			{
+				httpRequest.open('POST',encodeURI(this.strServletURL+"?"+strParameter),true);
+				httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+				httpRequest.send("$$CDORequest$$="+encodeURIComponent(strRequest));
+			}
+			else
+			{
+				httpRequest.open('GET',strURL,true);
+				httpRequest.setRequestHeader('Content-Type','application/x-www-form-urlencoded;charset=utf-8');
+				if(!(bCache==true))
+				{
+					httpRequest.setRequestHeader('If-Modified-Since','0');
+				}
+				httpRequest.send(null);
+			}
+		}
+		catch(e)
+		{
+		}
+	}
+
+	//定义事件
+	this.onVerifyFailed=null;
+}
+

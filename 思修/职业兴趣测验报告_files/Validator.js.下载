@@ -1,0 +1,203 @@
+﻿function isNumber(a) {
+	if (a == null || a == undefined || a.length == 0)
+		return false;
+	for ( var b = 0; b < a.length; b++)
+		if (a.charAt(b) < "0" || a.charAt(b) > "9")
+			return false;
+	return true
+}
+function isEmail(a) {
+	var b = /^[-_A-Za-z0-9]+@([_A-Za-z0-9]+\.)+[A-Za-z0-9]{2,3}$/;
+	if (b.test(a) == true)
+		return true;
+	else
+		return false
+}
+function isMobile(a) {
+	var b = /(13|14|15|16|17|18|19)\d{9}/;
+	if (b.test(a) == true)
+		return true;
+	else
+		return false
+}
+function isDomain(a) {
+	var c = /^((jincin\.com)|(com\.cn)|(edu\.cn)|(net\.cn)|(org\.cn)|(gov\.cn)|(com\.tw)|(org\.tw)|(idv\.tw)|(com\.hk))$/;
+	if (c.test(a) == true)
+		return false;
+	var b = /^(([a-zA-Z0-9]{0,20}\.)*)([a-zA-Z0-9]{1,20}\.)((com)|(edu)|(net)|(org)|(gov)|(cn)|(cc)|(tv)|(asia)|(info)|(biz)|(hk)|(tw)|(me)|(us)|(ph)|(cd)|(tel)|(name)|(so)|(mobi)|(com\.cn)|(edu\.cn)|(net\.cn)|(org\.cn)|(gov\.cn)|(com\.tw)|(org\.tw)|(idv\.tw)|(com\.hk))$/;
+	if (b.test(a) == true)
+		return true;
+	else
+		return false
+}
+function validate(r) {
+	for ( var j = r.split(","), i = 0; i < j.length; i++) {
+		var a = document.getElementById(j[i]);
+		switch (a.getAttribute("vtype")) {
+		case "int":
+			var h = a.getAttribute("vempty"), c = a.getAttribute("vname"), l = a
+					.getAttribute("vminvalue"), k = a.getAttribute("vmaxvalue"), b = trim(a.value);
+			if (isNumber(b) == false) {
+				a.focus();
+				alert(c + "只能包含数字字符");
+				a.select();
+				return false
+			}
+			if (h == "false")
+				if (b.length == 0) {
+					a.focus();
+					alert(c + "不能为空");
+					a.select();
+					return false
+				}
+			if (b.length == 0)
+				return true;
+			if (l != undefined) {
+				var p = eval(b), n = eval(l);
+				if (p < n) {
+					a.focus();
+					alert(c + "不能小于" + n);
+					a.select();
+					return false
+				}
+			}
+			if (k != undefined) {
+				var p = eval(b), m = eval(k);
+				if (p > m) {
+					a.focus();
+					alert(c + "不能大于" + m);
+					a.select();
+					return false
+				}
+			}
+			break;
+		case "string":
+			var c = a.getAttribute("vname"), e = a.getAttribute("vminlength"), d = a
+					.getAttribute("vmaxlength"), b = trim(a.value), o = a
+					.getAttribute("vregex");
+			if (e != undefined) {
+				var g = eval(e);
+				if (b.length < g) {
+					a.focus();
+					alert(c + "长度不能小于" + g);
+					a.select();
+					return false
+				}
+			}
+			if (d != undefined) {
+				var f = eval(d);
+				if (b.length > f) {
+					a.focus();
+					alert(c + "长度不能大于" + f);
+					a.select();
+					return false
+				}
+			}
+			if (o != undefined) {
+				var s = eval(o);
+				if (s.test(b) == false) {
+					alert(c + "格式不正确");
+					a.select();
+					return false
+				}
+			}
+			break;
+		case "email":
+			var c = a.getAttribute("vname"), e = a.getAttribute("vminlength"), d = a
+					.getAttribute("vmaxlength"), b = trim(a.value);
+			if (e != undefined) {
+				var g = eval(e);
+				if (b.length < g) {
+					a.focus();
+					alert(c + "长度不能小于" + g);
+					a.select();
+					return false
+				}
+			}
+			if (d != undefined) {
+				var f = eval(d);
+				if (b.length > f) {
+					a.focus();
+					alert(c + "长度不能大于" + f);
+					a.select();
+					return false
+				}
+			}
+			if (isEmail(b) == false) {
+				a.focus();
+				alert(c + "格式不正确");
+				a.select();
+				return false
+			}
+			break;
+		case "mobile":
+			var h = a.getAttribute("vempty"), c = a.getAttribute("vname"), b = trim(a.value);
+			if (h == "false")
+				if (b.length == 0) {
+					a.focus();
+					alert(c + "不能为空");
+					a.select();
+					return false
+				}
+			if (b.length == 0)
+				return true;
+			if (isMobile(b) == false) {
+				a.focus();
+				alert(c + "格式不正确");
+				a.select();
+				return false
+			}
+			break;
+		case "price":
+			break;
+		case "select":
+			var h = a.getAttribute("vempty"), c = a.getAttribute("vname"), q = a.selectedIndex;
+			if (h == "false")
+				if (q == 0) {
+					a.focus();
+					alert("请选择" + c);
+					return false
+				}
+			break;
+		case "domain":
+			var h = a.getAttribute("vempty"), c = a.getAttribute("vname"), e = a
+					.getAttribute("vminlength"), d = a
+					.getAttribute("vmaxlength"), b = trim(a.value);
+			if (h == "false")
+				if (b.length == 0) {
+					a.focus();
+					alert(c + "不能为空");
+					a.select();
+					return false
+				}
+			if (e != undefined) {
+				var g = eval(e);
+				if (b.length < g) {
+					a.focus();
+					alert(c + "长度不能小于" + g);
+					a.select();
+					return false
+				}
+			}
+			if (d != undefined) {
+				var f = eval(d);
+				if (b.length > f) {
+					a.focus();
+					alert(c + "长度不能大于" + f);
+					a.select();
+					return false
+				}
+			}
+			if (isDomain(b) == false) {
+				a.focus();
+				alert(c + "格式不正确");
+				a.select();
+				return false
+			}
+			break;
+		default:
+			return true
+		}
+	}
+	return true
+}

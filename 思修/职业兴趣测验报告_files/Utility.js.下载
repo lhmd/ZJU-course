@@ -1,0 +1,295 @@
+﻿function rand(a) {
+	return Math.round(Math.random() * a)
+}
+function encodeToXMLText(c) {
+	for ( var a = "", e = c.length, b = 0; b < e; b = b + 1) {
+		var d = c.charAt(b);
+		switch (d) {
+		case "&":
+			a += "&amp;";
+			break;
+		case "/":
+			a += "&#47;";
+			break;
+		case "'":
+			a += "&#039;";
+			break;
+		case ">":
+			a += "&gt;";
+			break;
+		case "<":
+			a += "&lt;";
+			break;
+		case '"':
+			a += "&quot;";
+			break;
+		case "\r":
+			a += "&#xd;";
+			break;
+		case "\n":
+			a += "&#xa;";
+			break;
+		default:
+			a += d
+		}
+	}
+	return a
+}
+function encodeToHTMLText(c) {
+	for ( var a = "", e = c.length, b = 0; b < e; b = b + 1) {
+		var d = c.charAt(b);
+		switch (d) {
+		case "&":
+			a += "&amp;";
+			break;
+		case "/":
+			a += "&#47;";
+			break;
+		case " ":
+			a += "&nbsp;";
+			break;
+		case "'":
+			a += "&#039;";
+			break;
+		case ">":
+			a += "&gt;";
+			break;
+		case "<":
+			a += "&lt;";
+			break;
+		case '"':
+			a += "&quot;";
+			break;
+		case "\r":
+			a += "&#xd;";
+			break;
+		case "\n":
+			a += "&#xa;";
+			break;
+		default:
+			a += d
+		}
+	}
+	return a
+}
+function replaceChar(c, e, f) {
+	for ( var b = "", a = 0; a < c.length; a = a + 1) {
+		var d = c.charAt(a);
+		if (d == e)
+			b += f;
+		else
+			b += d
+	}
+	return b
+}
+function trimLeft(b) {
+	for ( var d = 0, a = 0; a < b.length; a = a + 1) {
+		var c = b.charAt(a);
+		if (c == " " || c == "\n" || c == "\t")
+			d++;
+		else
+			break
+	}
+	return b.substr(d)
+}
+function trimRight(a) {
+	for ( var d = a.length, b = a.length - 1; b >= 0; b = b - 1) {
+		var c = a.charAt(b);
+		if (c == " " || c == "\n" || c == "\t")
+			d--;
+		else
+			break
+	}
+	return a.substr(0, d)
+}
+function trim(b) {
+	var a = trimLeft(b);
+	a = trimRight(a);
+	return a
+}
+function getBrowserType() {
+	var a = "";
+	if (navigator.userAgent.indexOf("MSIE") >= 0)
+		return "MSIE";
+	if (navigator.userAgent.indexOf("Firefox") >= 0)
+		return "Firefox";
+	if (navigator.userAgent.indexOf("Safari") >= 0)
+		return "Safari";
+	if (navigator.userAgent.indexOf("Camino") >= 0)
+		return "Camino";
+	if (navigator.userAgent.indexOf("Gecko/") >= 0)
+		return "Gecko";
+	return ""
+}
+String.prototype.formatTextToHTML = function() {
+	return this.replace(/&gt;/g, ">").replace(/&lt;/g, "<").replace(/&amp;/g,
+			"&").replace(/&nbsp;/g, " ").replace(/&#47;/g, "/").replace(
+			/&apos;/g, "'").replace(/&quot;/g, '"').replace(/"&#xd;&#xa;"/g, "\r\n").replace(/"&#xd;"/g, "\r").replace(/&#xa;/g, "\n")
+};
+String.prototype.formatTextToHTML2 = function() {
+	return this.replace(/&gt;/g, ">").replace(/&lt;/g, "<").replace(/&amp;/g,
+			"&").replace(/&nbsp;/g, " ").replace(/&#47;/g, "/").replace(
+			/&apos;/g, "'").replace(/&quot;/g, '"').replace(/"&#xd;&#xa;"/g, "</br>").replace(/"&#xd;"/g, "</br>").replace(/&#xa;/g, "</br>")
+};
+String.prototype.getLength = function() {
+	var a = this.match(/[\u00FF-\uFFFF]/gi);
+	if (!a || a == null)
+		return this.length;
+	var b = this.length + a.length;
+	return b
+};
+function richTextInputEncoder(b) {
+	var a = b;
+	if (b == null)
+		return b;
+	a = a.replace(/[ ]/g, "");
+	a = a.replace(/[\r\n\t]/g, "");
+	return a
+}
+function numberArrayToText(c, d) {
+	for ( var b = "", a = 0; a < c.length; a = a + 1) {
+		if (a > 0)
+			b += d;
+		b += c[a]
+	}
+	return b
+}
+function sortNumber(a, d) {
+	if (d == null)
+		d = 0;
+	for ( var b = 0; b < a.length - 1; b = b + 1)
+		for ( var c = b + 1; c < a.length; c = c + 1)
+			if (d == 0) {
+				if (a[b] > a[c]) {
+					var e = a[b];
+					a[b] = a[c];
+					a[c] = e
+				}
+			} else if (a[b] < a[c]) {
+				var e = a[b];
+				a[b] = a[c];
+				a[c] = e
+			}
+}
+function randSelectNumber(d, f, h) {
+	for ( var b = new Array(f - d + 1), a = d; a <= f; a = a + 1)
+		b[a - d] = a;
+	var e = f - d + 1, g = new Array(h);
+	for (a = 0; a < h; a = a + 1) {
+		var i = rand(e - 1);
+		g[a] = b[i];
+		for ( var c = i + 1; c < b.length; c = c + 1)
+			b[c - 1] = b[c];
+		e = e - 1
+	}
+	sortNumber(g);
+	return g
+}
+function stakeToText(d, b, g) {
+	for ( var c = "", f = d.length / b, e = 0, a = 0; a < f; a = a + 1) {
+		if (a > 0)
+			c += g;
+		c += d.substr(e, b);
+		e += b
+	}
+	return c
+}
+function Cab(c, d) {
+	for ( var b = 1, a = 0; a < d; a += 1) {
+		b *= c - a;
+		b /= a + 1
+	}
+	return b
+}
+function integerToMoney(c) {
+	var b = c / 100, a = c % 100;
+	if (a < 10)
+		return "" + b + ".0" + a;
+	else
+		return "" + b + "." + a
+}
+function loadXML(d) {
+	var a = null;
+	if (!window.DOMParser && window.ActiveXObject)
+		for ( var c = [ "MSXML.2.DOMDocument.6.0", "MSXML.2.DOMDocument.3.0",
+				"Microsoft.XMLDOM" ], b = 0; b < c.length; b++)
+			try {
+				a = new ActiveXObject(c[b]);
+				a.async = false;
+				a.loadXML(d);
+				break
+			} catch (e) {
+			}
+	else if (window.DOMParser && document.implementation
+			&& document.implementation.createDocument)
+		try {
+			domParser = new DOMParser;
+			a = domParser.parseFromString(d, "text/xml")
+		} catch (e) {
+		}
+	else
+		return null;
+	return a.documentElement
+}
+function findMatchedChar(f, d) {
+	if (f < 0)
+		return -1;
+	var e = d.charAt(f), c = 0, h = -1, i = -1, a = " ";
+	switch (e) {
+	case "(":
+		a = ")";
+		break;
+	case "{":
+		a = "}";
+		break;
+	case "[":
+		a = "]";
+		break;
+	case ")":
+		a = "(";
+		break;
+	case "}":
+		a = "{";
+		break;
+	case "]":
+		a = "[";
+		break;
+	default:
+		return -1
+	}
+	var j = d.length;
+	switch (e) {
+	case "(":
+	case "{":
+	case "[":
+		for ( var b = f + 1; b < j; b++) {
+			var g = d.charAt(b);
+			if (g == e)
+				c++;
+			else if (g == a)
+				if (c == 0) {
+					i = b;
+					break
+				} else
+					c--
+		}
+		return i;
+	case ")":
+	case "}":
+	case "]":
+		for ( var b = f - 1; b >= 0; b--) {
+			var g = d.charAt(b);
+			if (g == e)
+				c++;
+			else if (g == a)
+				if (c == 0) {
+					h = b;
+					break
+				} else
+					c--
+		}
+		return h;
+	default:
+		return -1
+	}
+}

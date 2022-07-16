@@ -1,0 +1,211 @@
+var httpClient=new HttpClient("handleTrans.cdo");
+var reset=function(strDomain,id)
+{
+	window.location.replace("http://"+strDomain+"/student/tc/careerPlaning/startevaluation.htm?id="+id);
+}
+
+var reset1=function(strDomain,id)
+{
+	window.location.replace("http://"+strDomain+"/student/tc/careerPlaning/evaluationtest.htm?id="+id);
+}
+
+var reset2=function(strDomain,id,nSex)
+{
+	window.location.replace("http://"+strDomain+"/student/tc/careerPlaning/evaluationtest.htm?id="+id+"&nSex="+nSex);
+}
+
+function teacherReset(strDomain, id) {
+	window.location.replace("http://"+strDomain+"/teacher/evaluation/pages/startevaluation.htm?id="+id);
+}
+
+var exportPdf=function(strName,nNumder) {
+	// 隐藏按钮
+	document.getElementById("retestBtn").style.display='none';
+	//导出样式调整
+	document.getElementById('pdf1').setAttribute('hidden','hidden');
+	document.getElementById('pdf2').removeAttribute("hidden")
+
+	//转PDF时到页面顶部
+	window.pageYOffset = 0;
+	document.documentElement.scrollTop = 0
+	document.body.scrollTop = 0;
+	if(strName=="职业兴趣测验报告"){
+		showQRCode()
+	}
+	var element = $("#pdfDom");    // 这个dom元素是要导出pdf的div容器
+	var w = element.width();    // 获得该容器的宽
+	var h = element.height();    // 获得该容器的高
+	var offsetTop = element.offset().top;    // 获得该容器到文档顶部的距离
+	var offsetLeft = element.offset().left;    // 获得该容器到文档最左的距离
+	var canvas = document.createElement("canvas");
+	var abs = 0;
+	var win_i = $(window).width();    // 获得当前可视窗口的宽度（不包含滚动条）
+	var win_o = window.innerWidth;    // 获得当前窗口的宽度（包含滚动条）
+	if(win_o>win_i){
+		abs = (win_o - win_i)/2;    // 获得滚动条长度的一半
+	}
+	canvas.width = w * 2;    // 将画布宽&&高放大两倍
+	canvas.height = h * 2;
+	var context = canvas.getContext("2d");
+	context.scale(2, 2);
+	context.translate(-offsetLeft-abs,-offsetTop);
+	// 这里默认横向没有滚动条的情况，因为offset.left(),有无滚动条的时候存在差值，因此
+	// translate的时候，要把这个差值去掉
+	html2canvas(element).then(function(canvas) {
+		var contentWidth = canvas.width;
+		var contentHeight = canvas.height;
+		//一页pdf显示html页面生成的canvas高度;
+		var pageHeight = contentWidth / 592.28 * 841.89;
+		//未生成pdf的html页面高度
+		var leftHeight = contentHeight;
+		//页面偏移
+		var position = 0;
+		//a4纸的尺寸[595.28,841.89]，html页面生成的canvas在pdf中图片的宽高
+		var imgWidth = 595.28;
+		var imgHeight = 592.28/contentWidth * contentHeight+nNumder;
+		var pageData = canvas.toDataURL('image/jpeg', 1.0);
+		var pdf = new jsPDF('', 'pt', 'a4');
+		//有两个高度需要区分，一个是html页面的实际高度，和生成pdf的页面高度(841.89)
+		//当内容未超过pdf一页显示的范围，无需分页
+		if (leftHeight < pageHeight) {
+			pdf.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight);
+		} else {    // 分页
+			while(leftHeight > 0) {
+				pdf.addImage(pageData, 'JPEG', 0, position, imgWidth, imgHeight)
+				leftHeight -= pageHeight;
+				position -= 841.89;
+				//避免添加空白页
+				if(leftHeight > 0) {
+					pdf.addPage();
+				}
+			}
+		}
+		pdf.save(strName+'.pdf');
+		window.location.reload();
+	})
+}
+//导出PDF  svg空白处理
+function showQRCode() {
+	scrollTo(0, 0);
+
+	if (typeof html2canvas !== 'undefined') {
+		//以下是对svg的处理
+		var nodesToRecover = [];
+		var nodesToRemove = [];
+		var svgElem = $("#chartdiv").find('svg');//divReport为需要截取成图片的dom的id
+		svgElem.each(function (index, node) {
+			var parentNode = node.parentNode;
+			var svg = node.outerHTML.trim();
+
+			var canvas = document.createElement('canvas');
+			canvg(canvas, svg);
+			if (node.style.position) {
+				canvas.style.position += node.style.position;
+				canvas.style.left += node.style.left;
+				canvas.style.top += node.style.top;
+			}
+
+			nodesToRecover.push({
+				parent: parentNode,
+				child: node
+			});
+			parentNode.removeChild(node);
+
+			nodesToRemove.push({
+				parent: parentNode,
+				child: canvas
+			});
+
+			parentNode.appendChild(canvas);
+		});
+		html2canvas(document.querySelector("#chartdiv"), {
+			onrendered: function(canvas) {
+				var base64Str =canvas.toDataURL();//base64码，可以转图片
+
+				//...
+				$('<img>',{src:base64Str}).appendTo($('body'));//直接在原网页显示
+			}
+		});
+	}
+}
+
+
+var showCareer=function(strName)
+{
+	var cdoRequest=new CDO();
+	var cdoResponse=new CDO();
+	cdoRequest.setStringValue("strServiceName","CareerService");
+	cdoRequest.setStringValue("strTransName","getCareerByName");
+	cdoRequest.setStringValue("strName",strName);
+	var ret=httpClient.handleTrans(cdoRequest,cdoResponse);
+	if(ret.nCode!=0)
+	{
+		alert("操作失败："+ret.strText);
+	}
+	var lId=cdoResponse.getLongValue("lId");
+	if(lId)
+	{
+		window.open("http://"+strDomain+"/student/tc/careerPlaning/careerCwShowCareer.htm?id="+lId);
+	}else{
+		alert("没有此职业！");
+	}
+}
+
+
+var showCourse=function(strName,lSchoolId)
+{
+	var cdoRequest=new CDO();
+	var cdoResponse=new CDO();
+	cdoRequest.setStringValue("strServiceName","CourseService");
+	cdoRequest.setStringValue("strTransName","getEvaluationCourse");
+	cdoRequest.setStringValue("strName",strName);
+	var ret=httpClient.handleTrans(cdoRequest,cdoResponse);
+	if(ret.nCode!=0)
+	{
+		alert(ret.strText);
+		return;
+	}
+	var lId=cdoResponse.getLongValue("cdoCourseware.lId");
+	window.open(strCourseUrl + "/course.htm?courseId="+lId);
+}
+
+//显示性别选择框
+var showSex = function()
+{
+	if(document.getElementById("selectSex"))
+	{
+		document.getElementById("selectSex").style.display="";
+	}
+	if(document.getElementById("tcc"))
+	{
+		document.getElementById("tcc").style.display="";
+	}
+}
+
+//弹出框的取消
+var cancel = function(){
+	document.getElementById("nSex1").checked=false;
+	document.getElementById("nSex2").checked=false;
+	document.getElementById("selectSex").style.display="none";
+	document.getElementById("tcc").style.display="none";
+}
+//性别选择
+var gotoTest = function()
+{
+	if(document.getElementById("nSex1").checked==false&&document.getElementById("nSex2").checked==false){
+				alert("请选择您的性别");
+				return;
+	}
+	var id = document.getElementById("lEvaluationId").value;
+	var strDomain = document.getElementById("strDomain").value;
+	var nSex = 1;
+	if(document.getElementById("nSex1").checked)
+	{
+		nSex =1;
+	}else if(document.getElementById("nSex2").checked)
+	{
+		nSex = 2;
+	}
+	cancel();
+	window.location.replace("http://"+strDomain+"/student/tc/careerPlaning/startevaluation.htm?id="+id+"&nSex="+nSex);
+}
