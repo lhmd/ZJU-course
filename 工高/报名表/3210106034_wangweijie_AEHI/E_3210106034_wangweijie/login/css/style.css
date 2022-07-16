@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../css/img/2018113004051_22au4.jpeg);
+    /*这里的100% auto 表示将背景图片的长度100%显示，高度自适应*/
+    background-size: 100% auto;
+}
+
+#maxbox{
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px,50px;
+    /*这里的90表示以不透明度90%显示*/
+    background-color: #00000090;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+}
+#maxbox h1{
+    padding: 0;
+    padding-top: 60px;
+    color: white;
+    font-size: 30px;
+}
+
+#maxbox .inputbox{
+    margin-top: 30px;
+
+}
+#maxbox .inputText{
+    margin-top: 20px;
+
+}
+#maxbox .inputText input{
+    border: 0;
+    padding: 6px;
+    border-bottom: 1px soild white;
+    /*这里的00表示不透明度为0，即透明显示*/
+    background-color: #FFFFFF00
+    color white;
+}
+#maxbox .inputbox .inputButton{
+    margin: 0;
+    margin-top: 20px;
+    width: 150px;
+    height: 25px;
+    /*给这个按钮变为圆角边角*/
+    border-radius: 25px;
+    color: white;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);/*颜色线性渐变*/
+}
+
+
+#sign_up{
+    margin-top: 40px;
+    color:white;
+}

@@ -1,0 +1,158 @@
+html{
+    background-image: linear-gradient(135deg,pink,yellow);
+    width:1270px;
+}/*总体上色*/
+.header{
+    color:palevioletred;
+    text-align: center;
+    text-shadow: 2px 2px lightsalmon;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px lemonchiffon;
+    border-radius: 15px;
+    border-style: groove;
+    padding:0px;
+    margin:0px;
+}/*大标题*/
+.menulist{
+    font-size: 20px;
+    width:80px;
+    height:20px;
+    margin:50px;
+    text-align: left;/*文本格式*/
+    background-color: transparent;
+}
+.menulist:hover{
+    font-size: 30px;
+    width:160px;
+    height:40px;
+    margin:40px;
+    text-align: left;
+    background-color: transparent;
+}
+.menu{
+    background-color: lemonchiffon;
+    margin: 0px;
+    padding: 0px;
+    height:750px;
+    width:300px;
+    float:left;
+    border-style: double;
+    border-color:aquamarine;
+    border-width: 5px;
+    border-radius: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*元素字体*/
+}
+.today{
+    margin:30px;
+    color: crimson;
+}
+#button1{
+    float: left;
+    margin:30px;
+    padding:20px;
+    background-color: ghostwhite;
+    border-style:dotted;
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+}
+#input{
+    border-style: solid;
+    border-width: 4px;
+    border-color: gold;
+    width:600px;
+    height:40px;
+    font-size: 20px;
+}
+.todolists{
+    border-style: solid;
+    border-color: rgb(32, 68, 32);
+    border-width: 1px;
+    margin:5px;
+    font-size: 20px;
+}
+li:hover{
+    background-color: lightgoldenrodyellow;
+}                                               
+#truetodobackground{
+    border-style: solid;
+    border-width: 5px;
+    border-color:darkseagreen;
+    width: 550px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px 20px;
+    overflow: scroll;
+    position: relative;
+    top: 20px;
+    left: -150px;
+}
+#moreimf{
+    border-style: solid;
+    border-width: 5px;
+    border-color:darkseagreen;
+    width: 250px;
+    height: 500px;
+    padding: 10px;
+    margin: 10px 20px;
+    position: relative;
+    top: -240px;
+    left: 590px;
+}
+#finished{
+    border-style: solid;
+    border-width: 5px;
+    border-color:darkseagreen;
+    width: 550px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px 20px;
+    overflow: scroll;
+    position: relative;
+    top: -500px;
+    left: 13px;
+}
+.content{
+    float:right;
+    background-color:aliceblue;
+    height:745px;
+    width:925px;
+    border-style: dotted;
+    border-color: darkseagreen;
+    border-width: 5px;
+    border-radius: 30px;
+    margin: 0px;
+    padding:0px;
+    z-index: 1;/*元素堆叠顺序*/
+}
+
+.footer{
+    text-align: center;
+    background-color: lavenderblush;
+    clear: both;
+    border-radius: 30px;
+    height:20px;
+}
+.footertext{
+    margin: 0px;
+    animation: twinkle 2.0s infinite alternate;
+}
+.deletebuttons{
+    margin: 0;
+    border-radius: 25px;
+    color: white;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);/*颜色线性渐变*/
+}
+@keyframes twinkle {
+    0%{
+        opacity:.0.8;
+    }
+    100%{
+        opacity:0;
+    }
+}/*脚注，鼠标停留时显现*/
+#bigpart{
+    height: 900px;
+    width: 1250px;
+}

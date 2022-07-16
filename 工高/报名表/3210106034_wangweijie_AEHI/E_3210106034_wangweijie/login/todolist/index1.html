@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link href='day.css' rel='stylesheet'><!--引入CSS文件-->
+  </head>
+  <body>
+    <div id="bigpart">
+      <div class="header">
+          <h1>TODO LIST</h1>
+      </div><!--标题-->
+    
+      <div class="menu" id="left">
+          <ul id="ulist">
+              <li class="menulist">Today</li>
+              <li class="menulist">Imporant</li>
+              <li class="menulist">All</li>
+          </ul>
+      </div><!--菜单，但是功能并未实现，具体规划是点其中一个会跳转到对应页面-->
+      <div class="content" id="main">
+          <h1 class="today">Today</h1>
+          <button id="button1" type="submit">New Add</button><!--新建按钮-->
+          <label for="input"><input type="text" id="input"></label>
+          <div id="truetodobackground">
+            <ol id="truetodo">
+            </ol>
+          </div>
+          <div id="moreimf">
+            <input type="checkbox" id="box" name="box">
+            <input type="text" name="ListName" id="ListName">
+            <button id="button2">Search</button>
+          </div><!--搜索功能-->
+          <div id="finished">
+            <ol id="finish">
+            </ol>
+          </div><!--这个部分设计初衷是在备忘的选择框里打上对勾后移到这里来，但是并未实现-->
+      </div>
+      <div class="footer" id="footer">
+          <p class="footertext">上课摸了很多鱼的成果</p>
+      </div><!--底部标注-->
+    </div>
+  <script src="day2.js" defer></script>
+  </body>
+</html>
