@@ -1,0 +1,52 @@
+# Project: 6-addbutton
+# Makefile created by Dev-C++ 5.8.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = ../compiled/exceptio.o ../compiled/genlib.o ../compiled/graphics.o ../compiled/linkedlist.o ../compiled/random.o ../compiled/simpio.o ../compiled/strlib.o ../compiled/imgui.o ../compiled/6-addbutton.o
+LINKOBJ  = ../compiled/exceptio.o ../compiled/genlib.o ../compiled/graphics.o ../compiled/linkedlist.o ../compiled/random.o ../compiled/simpio.o ../compiled/strlib.o ../compiled/imgui.o ../compiled/6-addbutton.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -mwindows -m32 -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"../../libgraphics" -I"../../simpleGUI"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++" -I"../../libgraphics" -I"../../simpleGUI"
+BIN      = ../compiled/6-addbutton.exe
+CXXFLAGS = $(CXXINCS) -m32 -g3
+CFLAGS   = $(INCS) -m32 -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../compiled/exceptio.o: ../../libgraphics/exceptio.c
+	$(CC) -c ../../libgraphics/exceptio.c -o ../compiled/exceptio.o $(CFLAGS)
+
+../compiled/genlib.o: ../../libgraphics/genlib.c
+	$(CC) -c ../../libgraphics/genlib.c -o ../compiled/genlib.o $(CFLAGS)
+
+../compiled/graphics.o: ../../libgraphics/graphics.c
+	$(CC) -c ../../libgraphics/graphics.c -o ../compiled/graphics.o $(CFLAGS)
+
+../compiled/linkedlist.o: ../../libgraphics/linkedlist.c
+	$(CC) -c ../../libgraphics/linkedlist.c -o ../compiled/linkedlist.o $(CFLAGS)
+
+../compiled/random.o: ../../libgraphics/random.c
+	$(CC) -c ../../libgraphics/random.c -o ../compiled/random.o $(CFLAGS)
+
+../compiled/simpio.o: ../../libgraphics/simpio.c
+	$(CC) -c ../../libgraphics/simpio.c -o ../compiled/simpio.o $(CFLAGS)
+
+../compiled/strlib.o: ../../libgraphics/strlib.c
+	$(CC) -c ../../libgraphics/strlib.c -o ../compiled/strlib.o $(CFLAGS)
+
+../compiled/imgui.o: ../../simpleGUI/imgui.c
+	$(CC) -c ../../simpleGUI/imgui.c -o ../compiled/imgui.o $(CFLAGS)
+
+../compiled/6-addbutton.o: ../../tutorialcode/6-addbutton.c
+	$(CC) -c ../../tutorialcode/6-addbutton.c -o ../compiled/6-addbutton.o $(CFLAGS)

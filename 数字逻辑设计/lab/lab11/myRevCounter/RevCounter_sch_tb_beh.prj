@@ -1,0 +1,3 @@
+verilog work "RevCounter.v"
+verilog work "RevCounter_sch_tb.v"
+verilog work "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

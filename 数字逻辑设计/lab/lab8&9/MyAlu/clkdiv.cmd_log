@@ -1,0 +1,3 @@
+vhdtdtfi -lib work D:/projectStore/ise/MyAlu/clkdiv.v -lang verilog -prj MyAlu -o clkdiv.spl -module clkdiv -template D:/exestore/xlinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/projectStore/ise/MyAlu/clkdiv.sym 
+vhdtdtfi -lang verilog -prj MyAlu -o D:/projectStore/ise/MyAlu/clkdiv.tfi -lib work D:/projectStore/ise/MyAlu//clkdiv.v -module clkdiv -template D:/exestore/xlinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

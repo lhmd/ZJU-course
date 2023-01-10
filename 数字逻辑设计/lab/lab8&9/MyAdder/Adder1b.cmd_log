@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family artix7 -refsym Adder1b F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/Adder1b.sch F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/Adder1b.sym 
+sch2hdl -intstyle ise -family artix7 -verilog Adder1b.vf -w F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/Adder1b.sch 

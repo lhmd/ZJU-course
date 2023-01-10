@@ -1,0 +1,13 @@
+// Verilog instantiation template created from schematic D:\projectStore\ise\MyAlu\myALU.sch - Tue Oct 25 21:52:40 2022
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   myALU UUT (
+		.S(    ), 
+		.A(    ), 
+		.B(    ), 
+		.C(    ), 
+		.Co(    )
+   );

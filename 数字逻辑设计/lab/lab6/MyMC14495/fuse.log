@@ -1,0 +1,27 @@
+Running: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495_MyMC14495_sch_tb_isim_beh.exe -prj E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495_MyMC14495_sch_tb_beh.prj work.MyMC14495_MyMC14495_sch_tb work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495.vf" into library work
+Analyzing Verilog file "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495_sim.v" into library work
+Analyzing Verilog file "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160428 KB
+Fuse CPU Usage: 156 ms
+Compiling module AND4
+Compiling module AND3
+Compiling module AND2
+Compiling module INV
+Compiling module OR2
+Compiling module OR4
+Compiling module OR3
+Compiling module MyMC14495
+Compiling module MyMC14495_MyMC14495_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 10 Verilog Units
+Built simulation executable E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495_MyMC14495_sch_tb_isim_beh.exe
+Fuse Memory Usage: 168164 KB
+Fuse CPU Usage: 218 ms

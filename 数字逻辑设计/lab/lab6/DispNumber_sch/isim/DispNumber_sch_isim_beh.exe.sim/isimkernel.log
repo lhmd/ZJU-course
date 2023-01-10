@@ -1,0 +1,28 @@
+Command line:
+   DispNumber_sch_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52477
+
+Mon Oct 24 16:48:09 2022
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 842.248 Meg
+
+ Total Signals          : 226
+ Total Nets             : 67
+ Total Signal Drivers   : 49
+ Total Blocks           : 44
+ Total Primitive Blocks : 42
+ Total Processes        : 50
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 147
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 843.297 Meg
+
+Mon Oct 24 16:48:26 2022
+

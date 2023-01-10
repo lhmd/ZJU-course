@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Dec 21 17:33:28 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "J17" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "J18" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "T9" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "J14" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "segment<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "segment<1>" LOCATE = SITE "R10" LEVEL 1;
+COMP "segment<2>" LOCATE = SITE "K16" LEVEL 1;
+COMP "segment<3>" LOCATE = SITE "K13" LEVEL 1;
+COMP "segment<4>" LOCATE = SITE "P15" LEVEL 1;
+COMP "segment<5>" LOCATE = SITE "T11" LEVEL 1;
+COMP "segment<6>" LOCATE = SITE "L18" LEVEL 1;
+COMP "segment<7>" LOCATE = SITE "H15" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,120 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml MyAdder.twx MyAdder.ncd -o MyAdder.twr MyAdder.pcf -ucf
+ucf.ucf
+
+Design file:              MyAdder.ncd
+Physical constraint file: MyAdder.pcf
+Device,package,speed:     xc7k160t,fbg676,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_100mhz
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RSTN        |   -0.947(R)|      FAST  |    2.959(R)|      SLOW  |clk_100mhz_BUFGP  |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk_100mhz to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+AN<0>       |        11.948(R)|      SLOW  |         5.310(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+AN<1>       |        11.897(R)|      SLOW  |         5.406(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+AN<2>       |        11.782(R)|      SLOW  |         5.345(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+AN<3>       |        11.900(R)|      SLOW  |         5.277(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+SEGMENT<0>  |        12.845(R)|      SLOW  |         5.614(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+SEGMENT<1>  |        12.755(R)|      SLOW  |         5.733(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+SEGMENT<2>  |        12.726(R)|      SLOW  |         5.513(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+SEGMENT<3>  |        12.976(R)|      SLOW  |         5.509(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+SEGMENT<4>  |        12.381(R)|      SLOW  |         5.590(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+SEGMENT<5>  |        12.765(R)|      SLOW  |         5.502(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+SEGMENT<6>  |        12.556(R)|      SLOW  |         5.556(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+SEGMENT<7>  |        11.024(R)|      SLOW  |         5.039(R)|      FAST  |clk_100mhz_BUFGP  |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |    1.310|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+BN             |K_ROW          |    4.577|
+SW<0>          |SEGMENT<0>     |    8.669|
+SW<0>          |SEGMENT<1>     |    8.837|
+SW<0>          |SEGMENT<2>     |    8.480|
+SW<0>          |SEGMENT<3>     |    8.432|
+SW<0>          |SEGMENT<4>     |    8.713|
+SW<0>          |SEGMENT<5>     |    8.598|
+SW<0>          |SEGMENT<6>     |    8.478|
+SW<1>          |SEGMENT<0>     |    8.640|
+SW<1>          |SEGMENT<1>     |    8.808|
+SW<1>          |SEGMENT<2>     |    8.451|
+SW<1>          |SEGMENT<3>     |    8.403|
+SW<1>          |SEGMENT<4>     |    8.684|
+SW<1>          |SEGMENT<5>     |    8.569|
+SW<1>          |SEGMENT<6>     |    8.449|
+SW<2>          |SEGMENT<0>     |    8.610|
+SW<2>          |SEGMENT<1>     |    8.778|
+SW<2>          |SEGMENT<2>     |    8.421|
+SW<2>          |SEGMENT<3>     |    8.373|
+SW<2>          |SEGMENT<4>     |    8.654|
+SW<2>          |SEGMENT<5>     |    8.539|
+SW<2>          |SEGMENT<6>     |    8.419|
+SW<3>          |SEGMENT<0>     |    8.403|
+SW<3>          |SEGMENT<1>     |    8.571|
+SW<3>          |SEGMENT<2>     |    8.214|
+SW<3>          |SEGMENT<3>     |    8.166|
+SW<3>          |SEGMENT<4>     |    8.447|
+SW<3>          |SEGMENT<5>     |    8.332|
+SW<3>          |SEGMENT<6>     |    8.212|
+SW<4>          |SEGMENT<7>     |    7.745|
+SW<5>          |SEGMENT<7>     |    7.618|
+SW<6>          |SEGMENT<7>     |    7.527|
+SW<7>          |SEGMENT<7>     |    7.726|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Nov 07 16:06:49 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5101 MB
+
+
+

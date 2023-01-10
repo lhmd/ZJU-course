@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="pbdebounce">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2022-10-25T11:43:27</timestamp>
+    <attr value="pbdebounce" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-96" name="clk_1ms" />
+    <pin polarity="Input" x="0" y="-32" name="button" />
+    <pin polarity="Output" x="384" y="-96" name="pbreg" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-136" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin clk_1ms" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin button" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-96" type="pin pbreg" />
+        <rect width="256" x="64" y="-128" height="128" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <line x2="384" y1="-96" y2="-96" x1="320" />
+    </graph>
+</symbol>

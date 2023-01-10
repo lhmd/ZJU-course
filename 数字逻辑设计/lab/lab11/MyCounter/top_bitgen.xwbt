@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Code\ComputerLogic\MyCounter\top.ncd
+OUTFILE=D:\Code\ComputerLogic\MyCounter\top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=D:\Code\ComputerLogic\MyCounter
+LICENSE=WebPack
+USER_INFO=__0_0_0

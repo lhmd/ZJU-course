@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_FLIPFLOP.vf
+// /___/   /\     Timestamp : 12/07/2020 16:14:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/zbgg/isepro/isepro/lab10/Mylatch/D_FLIPFLOP.vf -w F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/zbgg/isepro/isepro/lab10/Mylatch/D_FLIPFLOP.sch
+//Design Name: D_FLIPFLOP
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_FLIPFLOP(C, 
+                  D, 
+                  R, 
+                  S, 
+                  Q, 
+                  Qbar);
+
+    input C;
+    input D;
+    input R;
+    input S;
+   output Q;
+   output Qbar;
+   
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire Q_DUMMY;
+   wire Qbar_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qbar = Qbar_DUMMY;
+   NAND3  XLXI_1 (.I0(Qbar_DUMMY), 
+                 .I1(XLXN_9), 
+                 .I2(S), 
+                 .O(Q_DUMMY));
+   NAND3  XLXI_2 (.I0(R), 
+                 .I1(XLXN_12), 
+                 .I2(Q_DUMMY), 
+                 .O(Qbar_DUMMY));
+   NAND3  XLXI_3 (.I0(XLXN_9), 
+                 .I1(XLXN_14), 
+                 .I2(S), 
+                 .O(XLXN_8));
+   NAND3  XLXI_4 (.I0(C), 
+                 .I1(R), 
+                 .I2(XLXN_8), 
+                 .O(XLXN_9));
+   NAND3  XLXI_5 (.I0(XLXN_14), 
+                 .I1(C), 
+                 .I2(XLXN_9), 
+                 .O(XLXN_12));
+   NAND3  XLXI_6 (.I0(R), 
+                 .I1(D), 
+                 .I2(XLXN_12), 
+                 .O(XLXN_14));
+endmodule

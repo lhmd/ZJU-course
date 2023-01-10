@@ -1,0 +1,9 @@
+[Inputs]
+=A[3:0]=
+=B[3:0]=
+[Outputs]
+=C[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel myAnd2b4
+

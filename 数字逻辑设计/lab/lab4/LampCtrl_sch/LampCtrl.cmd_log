@@ -1,0 +1,6 @@
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl_drc.vf -w F:/LampCtrl_sch/LampCtrl.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl.vf -w F:/LampCtrl_sch/LampCtrl.sch 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w F:/LampCtrl_sch/LampCtrl.sch LampCtrl.tfi 
+sch2sym -intstyle ise -family kintex7 -refsym LampCtrl F:/LampCtrl_sch/LampCtrl.sch F:/LampCtrl_sch/LampCtrl.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl.vf -w F:/LampCtrl_sch/LampCtrl.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl.vf -w F:/LampCtrl_sch/LampCtrl.sch 

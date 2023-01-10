@@ -1,0 +1,9 @@
+[Inputs]
+clk
+=btn[1:0]=
+[Outputs]
+=num[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel CreateNumber
+

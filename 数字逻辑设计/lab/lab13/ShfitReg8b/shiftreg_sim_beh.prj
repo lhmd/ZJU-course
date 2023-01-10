@@ -1,0 +1,3 @@
+verilog work "ShfitReg8b.v"
+verilog work "shiftreg_sim.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

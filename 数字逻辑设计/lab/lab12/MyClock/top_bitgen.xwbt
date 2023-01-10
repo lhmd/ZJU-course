@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\lab12\MyClock\top.ncd
+OUTFILE=D:\lab12\MyClock\top.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=D:\lab12\MyClock
+LICENSE=WebPack
+USER_INFO=__0_0_0

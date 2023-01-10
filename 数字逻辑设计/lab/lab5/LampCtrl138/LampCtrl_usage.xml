@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="2">
+<DesignStatistics TimeStamp="Mon Oct 17 18:11:54 2022"><group name="NetStatistics">
+<item name="NumNets_Active" rev="2">
+<attrib name="value" value="8"/></item>
+<item name="NumNodesOfType_Active_BENTQUAD" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_BOUNCEIN" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_GENERIC" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_HLONG" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_HQUAD" rev="2">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Active_IOBIN2OUT" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_LUTINPUT" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_OUTBOUND" rev="2">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PADINPUT" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PADOUTPUT" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_PINFEED" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_SINGLE" rev="2">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Active_VLONG" rev="2">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IOB-IOB18M" rev="2">
+<attrib name="value" value="2"/></item>
+<item name="IOB-IOB18S" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="IOB33-IOB33M" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="SLICEL-SLICEM" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="1">
+<attrib name="value" value="4"/></item>
+<item name="AGG_IO" rev="1">
+<attrib name="value" value="4"/></item>
+<item name="AGG_LOCED_IO" rev="1">
+<attrib name="value" value="4"/></item>
+<item name="AGG_SLICE" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BONDED_IOB" rev="1">
+<attrib name="value" value="3"/></item>
+<item name="NUM_BONDED_IOB33" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BSLUTONLY" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BSUSED" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LOCED_IOB" rev="1">
+<attrib name="value" value="3"/></item>
+<item name="NUM_LOCED_IOB33" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LOGIC_O6ONLY" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICEL" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICE_CYINIT" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="1">
+<attrib name="value" value="1"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Mon Oct 17 18:11:54 2022"><group name="SiteSummary">
+<item name="HARD0" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+<item name="IOB" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+<item name="IOB33" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB33_OUTBUF" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB_INBUF_EN" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+<item name="LUT6" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="PAD" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="4"/></item>
+<item name="SLICEL" rev="2">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Mon Oct 17 18:11:54 2022"><group name="IOB_INBUF_EN">
+<item name="IBUF_LOW_PWR" rev="2">
+<attrib name="TRUE" value="3"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Mon Oct 17 18:11:54 2022"><group name="IOB33_OUTBUF">
+<item name="IN" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="SLICEL">
+<item name="D" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="D4" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="D5" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="D6" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_INBUF_EN">
+<item name="INTERMDISABLE" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="OUT" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="PAD" rev="2">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="2">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="LUT6">
+<item name="A4" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="A5" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="A6" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="O6" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB33">
+<item name="O" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="PAD" rev="2">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB">
+<item name="I" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="PAD" rev="2">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="HARD0">
+<item name="0" rev="2">
+<attrib name="value" value="3"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

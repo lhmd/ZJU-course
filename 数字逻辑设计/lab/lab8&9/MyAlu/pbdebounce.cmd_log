@@ -1,0 +1,4 @@
+vhdtdtfi -lib work D:/projectStore/ise/MyAlu/pbdebounce.v -lang verilog -prj MyAlu -o pbdebounce.spl -module pbdebounce -template D:/exestore/xlinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 pbdebounce.spl D:/projectStore/ise/MyAlu/pbdebounce.sym 
+vhdtdtfi -lib work D:/projectStore/ise/MyAlu/pbdebounce.v -lang verilog -prj MyAlu -o pbdebounce.spl -module pbdebounce -template D:/exestore/xlinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 pbdebounce.spl D:/projectStore/ise/MyAlu/pbdebounce.sym 

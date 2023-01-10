@@ -1,0 +1,11 @@
+sch2sym -intstyle ise -family kintex7 -refsym AddSub4b D:/projectStore/ise/MyAlu/AddSub4b.sch D:/projectStore/ise/MyAlu/AddSub4b.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub4b_drc.vf -w D:/projectStore/ise/MyAlu/AddSub4b.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub4b.vf -w D:/projectStore/ise/MyAlu/AddSub4b.sch 
+xst -intstyle ise -ifn "D:/projectStore/ise/MyAlu/AddSub4b.xst" -ofn "D:/projectStore/ise/MyAlu/AddSub4b.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub4b_drc.vf -w D:/projectStore/ise/MyAlu/AddSub4b.sch 
+sch2sym -intstyle ise -family kintex7 -refsym AddSub4b D:/projectStore/ise/MyAlu/AddSub4b.sch D:/projectStore/ise/MyAlu/AddSub4b.sym 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/AddSub4b.sch AddSub4b.tfi 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub4b_drc.vf -w D:/projectStore/ise/MyAlu/AddSub4b.sch 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/AddSub4b.sch AddSub4b.tfi 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/AddSub4b.sch AddSub4b.tfi 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/AddSub4b.sch AddSub4b.tfi 

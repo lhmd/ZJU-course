@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family kintex7 -refsym MyMC14495 {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495.sch} {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495.sym} 
+sch2hdl -intstyle ise -family kintex7 -verilog MyMC14495_drc.vf -w {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495.sch} 
+sch2sym -intstyle ise -family kintex7 -refsym MyMC14495 {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495.sch} {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495.sym} 
+sch2sym -intstyle ise -family kintex7 -refsym MyMC14495 {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495.sch} {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/MyMC14495/MyMC14495.sym} 

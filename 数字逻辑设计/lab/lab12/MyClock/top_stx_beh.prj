@@ -1,0 +1,6 @@
+verilog isim_temp "SSeg7_Dev_IO.v"
+verilog isim_temp "my74LS161.v"
+verilog isim_temp "clk_1s.v"
+verilog isim_temp "clkdiv.v"
+verilog isim_temp "top.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

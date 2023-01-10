@@ -1,0 +1,117 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DisplaySync.vf
+// /___/   /\     Timestamp : 10/28/2021 20:05:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/Code/ComputerLogic/DisplaySync/DisplaySync.vf -w D:/Code/ComputerLogic/DisplaySync/DisplaySync.sch
+//Design Name: DisplaySync
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_DisplaySync (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 1ns / 1ps
+
+module DisplaySync(Hexs, 
+                   LES, 
+                   point, 
+                   Scan, 
+                   AN, 
+                   HEX, 
+                   LE, 
+                   p);
+
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] AN;
+   output [3:0] HEX;
+   output LE;
+   output p;
+   
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   
+   Mux4to1b4  XLXI_1 (.I0(Hexs[3:0]), 
+                     .I1(Hexs[7:4]), 
+                     .I2(Hexs[11:8]), 
+                     .I3(Hexs[15:12]), 
+                     .S(Scan[1:0]), 
+                     .O(HEX[3:0]));
+   Mux4to1  XLXI_2 (.I0(point[0]), 
+                   .I1(point[1]), 
+                   .I2(point[2]), 
+                   .I3(point[3]), 
+                   .S(Scan[1:0]), 
+                   .O(p));
+   Mux4to1  XLXI_3 (.I0(LES[0]), 
+                   .I1(LES[1]), 
+                   .I2(LES[2]), 
+                   .I3(LES[3]), 
+                   .S(Scan[1:0]), 
+                   .O(LE));
+   (* HU_SET = "XLXI_7_0" *) 
+   D2_4E_HXILINX_DisplaySync  XLXI_7 (.A0(Scan[0]), 
+                                     .A1(Scan[1]), 
+                                     .E(XLXN_40), 
+                                     .D0(XLXN_41), 
+                                     .D1(XLXN_42), 
+                                     .D2(XLXN_43), 
+                                     .D3(XLXN_44));
+   VCC  XLXI_8 (.P(XLXN_40));
+   INV  XLXI_9 (.I(XLXN_41), 
+               .O(AN[0]));
+   INV  XLXI_10 (.I(XLXN_42), 
+                .O(AN[1]));
+   INV  XLXI_11 (.I(XLXN_43), 
+                .O(AN[2]));
+   INV  XLXI_12 (.I(XLXN_44), 
+                .O(AN[3]));
+endmodule

@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Mux4to1b4_drc.vf -w G:/Digital_Logic_Design/SaltyfishXuan/Lab7/Mux4to1b4_sch/Mux4to1b4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Mux4to1b4 G:/Digital_Logic_Design/SaltyfishXuan/Lab7/Mux4to1b4_sch/Mux4to1b4.sch G:/Digital_Logic_Design/SaltyfishXuan/Lab7/Mux4to1b4_sch/Mux4to1b4.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Mux4to1b4 {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab7/Mux4to1b4_sch/Mux4to1b4.sch} {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab7/Mux4to1b4_sch/Mux4to1b4.sym} 

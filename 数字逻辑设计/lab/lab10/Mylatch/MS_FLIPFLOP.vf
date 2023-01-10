@@ -1,0 +1,88 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MS_FLIPFLOP.vf
+// /___/   /\     Timestamp : 12/07/2020 16:09:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/zbgg/isepro/isepro/lab10/Mylatch/MS_FLIPFLOP.vf -w F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/zbgg/isepro/isepro/lab10/Mylatch/MS_FLIPFLOP.sch
+//Design Name: MS_FLIPFLOP
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module CSR_LATCH_MUSER_MS_FLIPFLOP(C, 
+                                   R, 
+                                   S, 
+                                   Q, 
+                                   Qbar);
+
+    input C;
+    input R;
+    input S;
+   output Q;
+   output Qbar;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire Q_DUMMY;
+   wire Qbar_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qbar = Qbar_DUMMY;
+   NAND2  XLXI_1 (.I0(Qbar_DUMMY), 
+                 .I1(XLXN_6), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_2 (.I0(XLXN_7), 
+                 .I1(Q_DUMMY), 
+                 .O(Qbar_DUMMY));
+   NAND2  XLXI_3 (.I0(R), 
+                 .I1(C), 
+                 .O(XLXN_7));
+   NAND2  XLXI_4 (.I0(C), 
+                 .I1(S), 
+                 .O(XLXN_6));
+endmodule
+`timescale 1ns / 1ps
+
+module MS_FLIPFLOP(C, 
+                   R, 
+                   S, 
+                   Q, 
+                   Qbar, 
+                   Y);
+
+    input C;
+    input R;
+    input S;
+   output Q;
+   output Qbar;
+   output Y;
+   
+   wire XLXN_5;
+   wire XLXN_7;
+   wire Y_DUMMY;
+   
+   assign Y = Y_DUMMY;
+   CSR_LATCH_MUSER_MS_FLIPFLOP  XLXI_1 (.C(XLXN_7), 
+                                       .R(XLXN_5), 
+                                       .S(Y_DUMMY), 
+                                       .Q(Q), 
+                                       .Qbar(Qbar));
+   CSR_LATCH_MUSER_MS_FLIPFLOP  XLXI_2 (.C(C), 
+                                       .R(R), 
+                                       .S(S), 
+                                       .Q(Y_DUMMY), 
+                                       .Qbar(XLXN_5));
+   INV  XLXI_3 (.I(C), 
+               .O(XLXN_7));
+endmodule

@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SE_LATCH.vf
+// /___/   /\     Timestamp : 11/18/2019 13:46:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/isepro/Mylatch/SE_LATCH.vf -w D:/isepro/Mylatch/SE_LATCH.sch
+//Design Name: SE_LATCH
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SE_LATCH(R, 
+                S, 
+                Q, 
+                Qbar);
+
+    input R;
+    input S;
+   output Q;
+   output Qbar;
+   
+   wire Q_DUMMY;
+   wire Qbar_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qbar = Qbar_DUMMY;
+   NAND2  XLXI_1 (.I0(Qbar_DUMMY), 
+                 .I1(S), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_2 (.I0(R), 
+                 .I1(Q_DUMMY), 
+                 .O(Qbar_DUMMY));
+endmodule

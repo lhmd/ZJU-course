@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 1 -n
+3 -fastpaths -xml D_74LS138_Test.twx D_74LS138_Test.ncd -o D_74LS138_Test.twr
+D_74LS138_Test.pcf -ucf K7.ucf
+
+Design file:              D_74LS138_Test.ncd
+Physical constraint file: D_74LS138_Test.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+S1             |LED<0>         |    9.776|
+S1             |LED<1>         |    9.686|
+S1             |LED<2>         |    9.924|
+S1             |LED<3>         |    9.688|
+S1             |LED<4>         |    9.764|
+S1             |LED<5>         |    9.725|
+S1             |LED<6>         |   10.076|
+S1             |LED<7>         |   10.197|
+S2             |LED<0>         |    9.746|
+S2             |LED<1>         |    9.993|
+S2             |LED<2>         |    9.905|
+S2             |LED<3>         |    9.731|
+S2             |LED<4>         |   10.137|
+S2             |LED<5>         |   10.325|
+S2             |LED<6>         |   10.135|
+S2             |LED<7>         |   10.438|
+S3             |LED<0>         |   10.171|
+S3             |LED<1>         |   10.233|
+S3             |LED<2>         |   10.164|
+S3             |LED<3>         |    9.817|
+S3             |LED<4>         |   10.562|
+S3             |LED<5>         |   10.565|
+S3             |LED<6>         |   10.394|
+S3             |LED<7>         |   10.524|
+S4             |LED<0>         |    9.905|
+S4             |LED<1>         |    9.958|
+S4             |LED<2>         |    9.889|
+S4             |LED<3>         |    9.795|
+S4             |LED<4>         |    9.903|
+S4             |LED<5>         |   10.282|
+S4             |LED<6>         |   10.356|
+S4             |LED<7>         |   10.324|
+S5             |LED<0>         |    9.734|
+S5             |LED<1>         |    9.644|
+S5             |LED<2>         |    9.882|
+S5             |LED<3>         |    9.646|
+S5             |LED<4>         |    9.722|
+S5             |LED<5>         |    9.683|
+S5             |LED<6>         |   10.034|
+S5             |LED<7>         |   10.155|
+S6             |LED<0>         |    9.702|
+S6             |LED<1>         |    9.612|
+S6             |LED<2>         |    9.850|
+S6             |LED<3>         |    9.614|
+S6             |LED<4>         |    9.690|
+S6             |LED<5>         |    9.651|
+S6             |LED<6>         |   10.002|
+S6             |LED<7>         |   10.123|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Oct 17 17:02:53 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 494 MB
+
+
+

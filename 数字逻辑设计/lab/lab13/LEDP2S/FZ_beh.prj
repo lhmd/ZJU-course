@@ -1,0 +1,5 @@
+verilog work "Shfitreg9b.v"
+verilog work "ShfitReg8b.v"
+verilog work "Top.v"
+verilog work "FZ.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

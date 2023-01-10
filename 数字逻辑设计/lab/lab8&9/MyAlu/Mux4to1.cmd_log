@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/projectStore/ise/MyAlu/Mux4to1.v -lang verilog -prj MyAlu -o Mux4to1.spl -module Mux4to1 -template D:/exestore/xlinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Mux4to1.spl D:/projectStore/ise/MyAlu/Mux4to1.sym 

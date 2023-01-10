@@ -1,0 +1,129 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : AddSub4b_drc.vf
+// /___/   /\     Timestamp : 10/25/2022 21:14:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\exestore\xlinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog AddSub4b_drc.vf -w D:/projectStore/ise/MyAlu/AddSub4b.sch
+//Design Name: AddSub4b
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Adder1b_MUSER_AddSub4b(A, 
+                              B, 
+                              C, 
+                              Co, 
+                              S);
+
+    input A;
+    input B;
+    input C;
+   output Co;
+   output S;
+   
+   wire XLXN_4;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   XOR2  XLXI_1 (.I0(C), 
+                .I1(XLXN_4), 
+                .O(S));
+   AND2  XLXI_2 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_13));
+   AND2  XLXI_3 (.I0(C), 
+                .I1(B), 
+                .O(XLXN_14));
+   AND2  XLXI_4 (.I0(C), 
+                .I1(A), 
+                .O(XLXN_15));
+   OR3  XLXI_5 (.I0(XLXN_15), 
+               .I1(XLXN_14), 
+               .I2(XLXN_13), 
+               .O(Co));
+   XOR2  XLXI_6 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_4));
+endmodule
+`timescale 1ns / 1ps
+
+module AddSub1b_MUSER_AddSub4b(A, 
+                               B, 
+                               Ci, 
+                               Ctrl, 
+                               Co, 
+                               S);
+
+    input A;
+    input B;
+    input Ci;
+    input Ctrl;
+   output Co;
+   output S;
+   
+   wire XLXN_16;
+   
+   Adder1b_MUSER_AddSub4b  XLXI_11 (.A(A), 
+                                   .B(XLXN_16), 
+                                   .C(Ci), 
+                                   .Co(Co), 
+                                   .S(S));
+   XOR2  XLXI_12 (.I0(Ctrl), 
+                 .I1(B), 
+                 .O(XLXN_16));
+endmodule
+`timescale 1ns / 1ps
+
+module AddSub4b(A, 
+                B, 
+                Ctrl, 
+                Co, 
+                S);
+
+    input [3:0] A;
+    input [3:0] B;
+    input Ctrl;
+   output Co;
+   output [3:0] S;
+   
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_9;
+   
+   AddSub1b_MUSER_AddSub4b  XLXI_1 (.A(A[0]), 
+                                   .B(B[0]), 
+                                   .Ci(Ctrl), 
+                                   .Ctrl(Ctrl), 
+                                   .Co(XLXN_6), 
+                                   .S(S[0]));
+   AddSub1b_MUSER_AddSub4b  XLXI_2 (.A(A[1]), 
+                                   .B(B[1]), 
+                                   .Ci(XLXN_6), 
+                                   .Ctrl(Ctrl), 
+                                   .Co(XLXN_7), 
+                                   .S(S[1]));
+   AddSub1b_MUSER_AddSub4b  XLXI_3 (.A(A[2]), 
+                                   .B(B[2]), 
+                                   .Ci(XLXN_7), 
+                                   .Ctrl(Ctrl), 
+                                   .Co(XLXN_9), 
+                                   .S(S[2]));
+   AddSub1b_MUSER_AddSub4b  XLXI_4 (.A(A[3]), 
+                                   .B(B[3]), 
+                                   .Ci(XLXN_9), 
+                                   .Ctrl(Ctrl), 
+                                   .Co(Co), 
+                                   .S(S[3]));
+endmodule

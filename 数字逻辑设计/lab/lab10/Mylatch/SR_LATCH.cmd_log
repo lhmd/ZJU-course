@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab10/Mylatch/SR_LATCH.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab10/Mylatch/SR_LATCH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 "SR_LATCH.ngc" SR_LATCH.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o SR_LATCH_map.ncd SR_LATCH.ngd SR_LATCH.pcf 
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o SR_LATCH_map.ncd SR_LATCH.ngd SR_LATCH.pcf 
+par -w -intstyle ise -ol high -mt off SR_LATCH_map.ncd SR_LATCH.ncd SR_LATCH.pcf 

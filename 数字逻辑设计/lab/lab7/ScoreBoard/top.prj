@@ -1,0 +1,8 @@
+verilog work "Mux4to1b4.vf"
+verilog work "Mux4to1.vf"
+verilog work "MyMC14495.vf"
+verilog work "DisplaySync.vf"
+verilog work "clkdiv.v"
+verilog work "disp_num.vf"
+verilog work "CreateNumber.v"
+verilog work "top.v"

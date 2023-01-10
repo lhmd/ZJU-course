@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/LampCtrl138/LampCtrl.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/LampCtrl138/LampCtrl.syr" 
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/LampCtrl138/LampCtrl.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/LampCtrl138/LampCtrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "LampCtrl.ngc" LampCtrl.ngd  
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/LampCtrl138/LampCtrl.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/LampCtrl138/LampCtrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "LampCtrl.ngc" LampCtrl.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_map.ncd LampCtrl.ngd LampCtrl.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl_map.ncd LampCtrl.ncd LampCtrl.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LampCtrl.twx LampCtrl.ncd -o LampCtrl.twr LampCtrl.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f LampCtrl.ut LampCtrl.ncd 

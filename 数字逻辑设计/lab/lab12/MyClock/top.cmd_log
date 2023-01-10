@@ -1,0 +1,95 @@
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/MyClock/top.xst" -ofn "D:/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "D:/lab12/MyClock/top.xst" -ofn "D:/lab12/MyClock/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc k7.ucf -p xc7k160t-ffg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf k7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 

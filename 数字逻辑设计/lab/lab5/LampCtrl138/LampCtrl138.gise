@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="LampCtrl138.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="LampCtrl.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="LampCtrl.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="LampCtrl.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="LampCtrl.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="LampCtrl.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="LampCtrl.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="LampCtrl.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="LampCtrl.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="LampCtrl.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="LampCtrl.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="LampCtrl.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LampCtrl.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="LampCtrl.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="LampCtrl.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="LampCtrl.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="LampCtrl.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="LampCtrl.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="LampCtrl.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="LampCtrl.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="LampCtrl.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="LampCtrl.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="LampCtrl.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LampCtrl_LampCtrl_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LampCtrl_LampCtrl_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="LampCtrl_LampCtrl_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LampCtrl_LampCtrl_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="LampCtrl_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="LampCtrl_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="LampCtrl_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="LampCtrl_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="LampCtrl_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="LampCtrl_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="LampCtrl_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="LampCtrl_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="LampCtrl_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="LampCtrl_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="LampCtrl_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="LampCtrl_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="LampCtrl_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="LampCtrl_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="LampCtrl_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lampctrl.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="lampctrl.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="lampctrl.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1666001280" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1666001280">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001280" xil_pn:in_ck="-2895510771888692821" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1666001280">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl_sim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001280" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4786610997998030399" xil_pn:start_ts="1666001280">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001282" xil_pn:in_ck="3994982636016205355" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5514428227834139763" xil_pn:start_ts="1666001280">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001282" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2442981882548471627" xil_pn:start_ts="1666001282">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001282" xil_pn:in_ck="1956522878685945652" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1666001282">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.vf"/>
+      <outfile xil_pn:name="LampCtrl_sim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001285" xil_pn:in_ck="1956522878685945652" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7739756905315059329" xil_pn:start_ts="1666001282">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001286" xil_pn:in_ck="-8336616490367307138" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3925720167469021118" xil_pn:start_ts="1666001285">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001424" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1666001424">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001426" xil_pn:in_ck="3994982636016205355" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-767808504272514813" xil_pn:start_ts="1666001424">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001426" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2442981882548471627" xil_pn:start_ts="1666001426">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001426" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1666001426">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001426" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8583839939383261967" xil_pn:start_ts="1666001426">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001426" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-679146238375871736" xil_pn:start_ts="1666001426">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001426" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6559779429403942015" xil_pn:start_ts="1666001426">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001434" xil_pn:in_ck="121060079879279049" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-3842905635531498570" xil_pn:start_ts="1666001426">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="LampCtrl.jhd"/>
+      <outfile xil_pn:name="LampCtrl.lso"/>
+      <outfile xil_pn:name="LampCtrl.ngc"/>
+      <outfile xil_pn:name="LampCtrl.ngr"/>
+      <outfile xil_pn:name="LampCtrl.prj"/>
+      <outfile xil_pn:name="LampCtrl.stx"/>
+      <outfile xil_pn:name="LampCtrl.syr"/>
+      <outfile xil_pn:name="LampCtrl.xst"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="LampCtrl_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001434" xil_pn:in_ck="3002164014" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892509445476449" xil_pn:start_ts="1666001434">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001439" xil_pn:in_ck="1180622000063447443" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5660410636365451631" xil_pn:start_ts="1666001434">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.bld"/>
+      <outfile xil_pn:name="LampCtrl.ngd"/>
+      <outfile xil_pn:name="LampCtrl_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001458" xil_pn:in_ck="1180622000063447444" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="1307078288329540827" xil_pn:start_ts="1666001439">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="LampCtrl.pcf"/>
+      <outfile xil_pn:name="LampCtrl_map.map"/>
+      <outfile xil_pn:name="LampCtrl_map.mrp"/>
+      <outfile xil_pn:name="LampCtrl_map.ncd"/>
+      <outfile xil_pn:name="LampCtrl_map.ngm"/>
+      <outfile xil_pn:name="LampCtrl_map.xrpt"/>
+      <outfile xil_pn:name="LampCtrl_summary.xml"/>
+      <outfile xil_pn:name="LampCtrl_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001486" xil_pn:in_ck="-1898999298227537235" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-8808472733522092617" xil_pn:start_ts="1666001458">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.ncd"/>
+      <outfile xil_pn:name="LampCtrl.pad"/>
+      <outfile xil_pn:name="LampCtrl.par"/>
+      <outfile xil_pn:name="LampCtrl.ptwx"/>
+      <outfile xil_pn:name="LampCtrl.unroutes"/>
+      <outfile xil_pn:name="LampCtrl.xpi"/>
+      <outfile xil_pn:name="LampCtrl_pad.csv"/>
+      <outfile xil_pn:name="LampCtrl_pad.txt"/>
+      <outfile xil_pn:name="LampCtrl_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001516" xil_pn:in_ck="3994982636016199906" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="3160107541638749219" xil_pn:start_ts="1666001486">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="lampctrl.bgn"/>
+      <outfile xil_pn:name="lampctrl.bit"/>
+      <outfile xil_pn:name="lampctrl.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001913" xil_pn:in_ck="5612331408245620460" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="-5505904082297326742" xil_pn:start_ts="1666001913">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1666001486" xil_pn:in_ck="1180622000063447312" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1666001475">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.twr"/>
+      <outfile xil_pn:name="LampCtrl.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

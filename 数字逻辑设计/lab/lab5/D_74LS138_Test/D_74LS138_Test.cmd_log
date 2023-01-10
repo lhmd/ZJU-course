@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/D_74LS138_Test/D_74LS138_Test.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/D_74LS138_Test/D_74LS138_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 "D_74LS138_Test.ngc" D_74LS138_Test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o D_74LS138_Test_map.ncd D_74LS138_Test.ngd D_74LS138_Test.pcf 
+par -w -intstyle ise -ol high -mt off D_74LS138_Test_map.ncd D_74LS138_Test.ncd D_74LS138_Test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml D_74LS138_Test.twx D_74LS138_Test.ncd -o D_74LS138_Test.twr D_74LS138_Test.pcf 
+bitgen -intstyle ise -f D_74LS138_Test.ut D_74LS138_Test.ncd 
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/D_74LS138_Test/D_74LS138_Test.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/D_74LS138_Test/D_74LS138_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "D_74LS138_Test.ngc" D_74LS138_Test.ngd  
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/D_74LS138_Test/D_74LS138_Test.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab5/D_74LS138_Test/D_74LS138_Test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "D_74LS138_Test.ngc" D_74LS138_Test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o D_74LS138_Test_map.ncd D_74LS138_Test.ngd D_74LS138_Test.pcf 
+par -w -intstyle ise -ol high -mt off D_74LS138_Test_map.ncd D_74LS138_Test.ncd D_74LS138_Test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml D_74LS138_Test.twx D_74LS138_Test.ncd -o D_74LS138_Test.twr D_74LS138_Test.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f D_74LS138_Test.ut D_74LS138_Test.ncd 

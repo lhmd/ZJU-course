@@ -1,0 +1,29 @@
+Command line:
+   FZ_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49829
+
+Thu Dec 22 19:40:18 2022
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 197.448 Meg
+
+ Total Signals          : 334
+ Total Nets             : 177
+ Total Signal Drivers   : 126
+ Total Blocks           : 79
+ Total Primitive Blocks : 75
+ Total Processes        : 180
+ Total Traceable Variables  : 55
+ Total Scalar Nets and Variables : 309
+Total Line Count : 185
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 272.949 Meg
+
+Thu Dec 22 19:42:20 2022
+

@@ -1,0 +1,23 @@
+Running: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/Adder4b_Adder4b_sch_tb_isim_beh.exe -prj E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/Adder4b_Adder4b_sch_tb_beh.prj work.Adder4b_Adder4b_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/Adder1b.vf" into library work
+Analyzing Verilog file "E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/Adder4b.vf" into library work
+Analyzing Verilog file "E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/Adder4b_sim.v" into library work
+Analyzing Verilog file "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module XOR2
+Compiling module AND2
+Compiling module OR3
+Compiling module Adder1b_MUSER_Adder4b
+Compiling module Adder4b
+Compiling module Adder4b_Adder4b_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 7 Verilog Units
+Built simulation executable E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/Adder4b_Adder4b_sch_tb_isim_beh.exe
+Fuse Memory Usage: 29300 KB
+Fuse CPU Usage: 343 ms

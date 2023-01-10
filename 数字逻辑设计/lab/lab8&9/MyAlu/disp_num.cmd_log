@@ -1,0 +1,3 @@
+vhdtdtfi -prj MyAlu -o D:/projectStore/ise/MyAlu/disp_num.tfi -module disp_num -template D:/exestore/xlinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work MYMC14495.vf -lib work Mux4to14b.vf -lib work Mux4to1.v -lib work clkdiv.v -lib work disp_num.vf 
+vhdtdtfi -prj MyAlu -o D:/projectStore/ise/MyAlu/disp_num.tfi -module disp_num -template D:/exestore/xlinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work MYMC14495.vf -lib work Mux4to14b.vf -lib work Mux4to1.v -lib work clkdiv.v -lib work disp_num.vf 
+vhdtdtfi -prj MyAlu -o D:/projectStore/ise/MyAlu/disp_num.tfi -module disp_num -template D:/exestore/xlinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work MYMC14495.vf -lib work Mux4to14b.vf -lib work Mux4to1.v -lib work clkdiv.v -lib work disp_num.vf 

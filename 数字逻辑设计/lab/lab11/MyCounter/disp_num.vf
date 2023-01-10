@@ -1,0 +1,69 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : disp_num.vf
+// /___/   /\     Timestamp : 11/04/2021 19:37:47
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/Code/ComputerLogic/ScoreBoard/disp_num.vf -w D:/Code/ComputerLogic/ScoreBoard/disp_num.sch
+//Design Name: disp_num
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module disp_num(clk, 
+                HEXS, 
+                LES, 
+                points, 
+                rst, 
+                AN, 
+                Segment);
+
+    input clk;
+    input [15:0] HEXS;
+    input [3:0] LES;
+    input [3:0] points;
+    input rst;
+   output [3:0] AN;
+   output [7:0] Segment;
+   
+   wire [31:0] clkd;
+   wire [3:0] HEX;
+   wire XLXN_15;
+   wire XLXN_16;
+   
+   clkdiv  XLXI_1 (.clk(clk), 
+                  .rst(rst), 
+                  .clkdiv(clkd[31:0]));
+   DisplaySync  XLXI_2 (.Hexs(HEXS[15:0]), 
+                       .LES(LES[3:0]), 
+                       .point(points[3:0]), 
+                       .Scan(clkd[18:17]), 
+                       .AN(AN[3:0]), 
+                       .HEX(HEX[3:0]), 
+                       .LE(XLXN_15), 
+                       .p(XLXN_16));
+   MyMC14495  XLXI_3 (.D0(HEX[0]), 
+                     .D1(HEX[1]), 
+                     .D2(HEX[2]), 
+                     .D3(HEX[3]), 
+                     .LE(XLXN_15), 
+                     .point(XLXN_16), 
+                     .a(Segment[0]), 
+                     .b(Segment[1]), 
+                     .c(Segment[2]), 
+                     .d(Segment[3]), 
+                     .e(Segment[4]), 
+                     .f(Segment[5]), 
+                     .g(Segment[6]), 
+                     .p(Segment[7]));
+endmodule

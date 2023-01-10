@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="4">
+<DesignStatistics TimeStamp="Mon Oct 17 17:03:22 2022"><group name="NetStatistics">
+<item name="NumNets_Active" rev="4">
+<attrib name="value" value="33"/></item>
+<item name="NumNodesOfType_Active_BENTQUAD" rev="4">
+<attrib name="value" value="18"/></item>
+<item name="NumNodesOfType_Active_BOUNCEACROSS" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_BOUNCEIN" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="4">
+<attrib name="value" value="24"/></item>
+<item name="NumNodesOfType_Active_GENERIC" rev="4">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Active_HLONG" rev="4">
+<attrib name="value" value="24"/></item>
+<item name="NumNodesOfType_Active_HQUAD" rev="4">
+<attrib name="value" value="19"/></item>
+<item name="NumNodesOfType_Active_IOBIN2OUT" rev="4">
+<attrib name="value" value="14"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="4">
+<attrib name="value" value="14"/></item>
+<item name="NumNodesOfType_Active_LUTINPUT" rev="4">
+<attrib name="value" value="35"/></item>
+<item name="NumNodesOfType_Active_OUTBOUND" rev="4">
+<attrib name="value" value="26"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="4">
+<attrib name="value" value="15"/></item>
+<item name="NumNodesOfType_Active_PADINPUT" rev="4">
+<attrib name="value" value="8"/></item>
+<item name="NumNodesOfType_Active_PADOUTPUT" rev="4">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Active_PINBOUNCE" rev="4">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_PINFEED" rev="4">
+<attrib name="value" value="43"/></item>
+<item name="NumNodesOfType_Active_SINGLE" rev="4">
+<attrib name="value" value="34"/></item>
+<item name="NumNodesOfType_Active_VLONG" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_VQUAD" rev="4">
+<attrib name="value" value="21"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="3">
+<attrib name="value" value="14"/></item>
+<item name="AGG_IO" rev="3">
+<attrib name="value" value="14"/></item>
+<item name="AGG_LOCED_IO" rev="3">
+<attrib name="value" value="14"/></item>
+<item name="AGG_SLICE" rev="3">
+<attrib name="value" value="8"/></item>
+<item name="NUM_BONDED_IOB" rev="3">
+<attrib name="value" value="6"/></item>
+<item name="NUM_BONDED_IOB33" rev="3">
+<attrib name="value" value="8"/></item>
+<item name="NUM_BSLUTONLY" rev="3">
+<attrib name="value" value="13"/></item>
+<item name="NUM_BSUSED" rev="3">
+<attrib name="value" value="13"/></item>
+<item name="NUM_LOCED_IOB" rev="3">
+<attrib name="value" value="6"/></item>
+<item name="NUM_LOCED_IOB33" rev="3">
+<attrib name="value" value="8"/></item>
+<item name="NUM_LOGIC_O6ONLY" rev="3">
+<attrib name="value" value="13"/></item>
+<item name="NUM_SLICEL" rev="3">
+<attrib name="value" value="8"/></item>
+<item name="NUM_SLICE_CYINIT" rev="3">
+<attrib name="value" value="13"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="3">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IOB-IOB18M" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="IOB-IOB18S" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="IOB33-IOB33M" rev="4">
+<attrib name="value" value="7"/></item>
+<item name="IOB33-IOB33S" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="SLICEL-SLICEM" rev="4">
+<attrib name="value" value="2"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Mon Oct 17 17:03:22 2022"><group name="SiteSummary">
+<item name="HARD0" rev="4">
+<attrib name="total" value="1000000"/><attrib name="used" value="6"/></item>
+<item name="IOB" rev="4">
+<attrib name="total" value="1000000"/><attrib name="used" value="6"/></item>
+<item name="IOB33" rev="4">
+<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
+<item name="IOB33_OUTBUF" rev="4">
+<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
+<item name="IOB_INBUF_EN" rev="4">
+<attrib name="total" value="1000000"/><attrib name="used" value="6"/></item>
+<item name="LUT6" rev="4">
+<attrib name="total" value="1000000"/><attrib name="used" value="13"/></item>
+<item name="PAD" rev="4">
+<attrib name="total" value="1000000"/><attrib name="used" value="14"/></item>
+<item name="SLICEL" rev="4">
+<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Mon Oct 17 17:03:22 2022"><group name="IOB_INBUF_EN">
+<item name="IBUF_LOW_PWR" rev="4">
+<attrib name="TRUE" value="6"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Mon Oct 17 17:03:22 2022"><group name="SLICEL">
+<item name="A" rev="4">
+<attrib name="value" value="6"/></item>
+<item name="A4" rev="4">
+<attrib name="value" value="2"/></item>
+<item name="A5" rev="4">
+<attrib name="value" value="6"/></item>
+<item name="A6" rev="4">
+<attrib name="value" value="6"/></item>
+<item name="B" rev="4">
+<attrib name="value" value="5"/></item>
+<item name="B4" rev="4">
+<attrib name="value" value="5"/></item>
+<item name="B5" rev="4">
+<attrib name="value" value="5"/></item>
+<item name="B6" rev="4">
+<attrib name="value" value="5"/></item>
+<item name="C" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="C4" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="C5" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="C6" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="D" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="D4" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="D5" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="D6" rev="4">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="2">
+<attrib name="value" value="8"/></item>
+<item name="OUT" rev="2">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="4">
+<attrib name="value" value="14"/></item>
+</group>
+<group name="IOB33_OUTBUF">
+<item name="IN" rev="4">
+<attrib name="value" value="8"/></item>
+<item name="OUT" rev="4">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="LUT6">
+<item name="A4" rev="4">
+<attrib name="value" value="9"/></item>
+<item name="A5" rev="4">
+<attrib name="value" value="13"/></item>
+<item name="A6" rev="4">
+<attrib name="value" value="13"/></item>
+<item name="O6" rev="4">
+<attrib name="value" value="13"/></item>
+</group>
+<group name="IOB33">
+<item name="O" rev="4">
+<attrib name="value" value="8"/></item>
+<item name="PAD" rev="4">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="IOB_INBUF_EN">
+<item name="INTERMDISABLE" rev="4">
+<attrib name="value" value="6"/></item>
+<item name="OUT" rev="4">
+<attrib name="value" value="6"/></item>
+<item name="PAD" rev="4">
+<attrib name="value" value="6"/></item>
+</group>
+<group name="IOB">
+<item name="I" rev="4">
+<attrib name="value" value="6"/></item>
+<item name="PAD" rev="4">
+<attrib name="value" value="6"/></item>
+</group>
+<group name="HARD0">
+<item name="0" rev="4">
+<attrib name="value" value="6"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

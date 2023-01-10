@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/projectStore/ise/MyAlu/AddSub1b.xst" -ofn "D:/projectStore/ise/MyAlu/AddSub1b.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub1b_drc.vf -w D:/projectStore/ise/MyAlu/AddSub1b.sch 
+sch2sym -intstyle ise -family kintex7 -refsym AddSub1b D:/projectStore/ise/MyAlu/AddSub1b.sch D:/projectStore/ise/MyAlu/AddSub1b.sym 
+xst -intstyle ise -ifn "D:/projectStore/ise/MyAlu/AddSub1b.xst" -ofn "D:/projectStore/ise/MyAlu/AddSub1b.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym AddSub1b D:/projectStore/ise/MyAlu/AddSub1b.sch D:/projectStore/ise/MyAlu/AddSub1b.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog AddSub1b_drc.vf -w D:/projectStore/ise/MyAlu/AddSub1b.sch 
+sch2sym -intstyle ise -family kintex7 -refsym AddSub1b D:/projectStore/ise/MyAlu/AddSub1b.sch D:/projectStore/ise/MyAlu/AddSub1b.sym 
+sch2sym -intstyle ise -family kintex7 -refsym AddSub1b D:/projectStore/ise/MyAlu/AddSub1b.sch D:/projectStore/ise/MyAlu/AddSub1b.sym 

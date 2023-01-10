@@ -1,0 +1,29 @@
+Command line:
+   Adder4b_Adder4b_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  54862
+
+Mon Nov 07 19:11:57 2022
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5154.46 Meg
+
+ Total Signals          : 135
+ Total Nets             : 46
+ Total Signal Drivers   : 32
+ Total Blocks           : 31
+ Total Primitive Blocks : 25
+ Total Processes        : 34
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 231
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 4839.88 Meg
+
+Mon Nov 07 19:17:41 2022
+
+

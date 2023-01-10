@@ -1,0 +1,392 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: myALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "myALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "myALU"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-fbg676
+
+---- Source Options
+Top Module Name                    : myALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\projectStore\ise\MyAlu\Adder1b.vf" into library work
+Parsing module <Adder1b>.
+Analyzing Verilog file "D:\projectStore\ise\MyAlu\AddSub1b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub1b>.
+Parsing module <AddSub1b>.
+Analyzing Verilog file "D:\projectStore\ise\MyAlu\myOr2b4.v" into library work
+Parsing module <myOr2b4>.
+Analyzing Verilog file "D:\projectStore\ise\MyAlu\myAnd2b4.v" into library work
+Parsing module <myAnd2b4>.
+Analyzing Verilog file "D:\projectStore\ise\MyAlu\Mux4to14b.vf" into library work
+Parsing module <Mux4to14b>.
+Analyzing Verilog file "D:\projectStore\ise\MyAlu\Mux4to1.v" into library work
+Parsing module <Mux4to1>.
+Analyzing Verilog file "D:\projectStore\ise\MyAlu\AddSub4b.vf" into library work
+Parsing module <Adder1b_MUSER_AddSub4b>.
+Parsing module <AddSub1b_MUSER_AddSub4b>.
+Parsing module <AddSub4b>.
+Analyzing Verilog file "D:\projectStore\ise\MyAlu\myALU.vf" into library work
+Parsing module <Adder1b_MUSER_myALU>.
+Parsing module <AddSub1b_MUSER_myALU>.
+Parsing module <AddSub4b_MUSER_myALU>.
+Parsing module <myALU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <myALU>.
+
+Elaborating module <AddSub4b_MUSER_myALU>.
+
+Elaborating module <AddSub1b_MUSER_myALU>.
+
+Elaborating module <Adder1b_MUSER_myALU>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR3>.
+
+Elaborating module <myAnd2b4>.
+
+Elaborating module <myOr2b4>.
+
+Elaborating module <Mux4to1>.
+
+Elaborating module <Mux4to14b>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR4>.
+
+Elaborating module <GND>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <myALU>.
+    Related source file is "D:\projectStore\ise\MyAlu\myALU.vf".
+    Summary:
+	no macro.
+Unit <myALU> synthesized.
+
+Synthesizing Unit <AddSub4b_MUSER_myALU>.
+    Related source file is "D:\projectStore\ise\MyAlu\myALU.vf".
+    Summary:
+	no macro.
+Unit <AddSub4b_MUSER_myALU> synthesized.
+
+Synthesizing Unit <AddSub1b_MUSER_myALU>.
+    Related source file is "D:\projectStore\ise\MyAlu\myALU.vf".
+    Summary:
+	no macro.
+Unit <AddSub1b_MUSER_myALU> synthesized.
+
+Synthesizing Unit <Adder1b_MUSER_myALU>.
+    Related source file is "D:\projectStore\ise\MyAlu\myALU.vf".
+    Summary:
+	no macro.
+Unit <Adder1b_MUSER_myALU> synthesized.
+
+Synthesizing Unit <myAnd2b4>.
+    Related source file is "D:\projectStore\ise\MyAlu\myAnd2b4.v".
+    Summary:
+	no macro.
+Unit <myAnd2b4> synthesized.
+
+Synthesizing Unit <myOr2b4>.
+    Related source file is "D:\projectStore\ise\MyAlu\myOr2b4.v".
+    Summary:
+	no macro.
+Unit <myOr2b4> synthesized.
+
+Synthesizing Unit <Mux4to1>.
+    Related source file is "D:\projectStore\ise\MyAlu\Mux4to1.v".
+    Found 1-bit 4-to-1 multiplexer for signal <o> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux4to1> synthesized.
+
+Synthesizing Unit <Mux4to14b>.
+    Related source file is "D:\projectStore\ise\MyAlu\Mux4to14b.vf".
+    Summary:
+	no macro.
+Unit <Mux4to14b> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Mux4to14b> ...
+
+Optimizing unit <myALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block myALU, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : myALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 63
+#      AND2                        : 32
+#      INV                         : 2
+#      LUT2                        : 9
+#      OR3                         : 4
+#      OR4                         : 4
+#      XOR2                        : 12
+# IO Buffers                       : 15
+#      IBUF                        : 10
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tfbg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   11  out of  101400     0%  
+    Number used as Logic:                11  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     11
+   Number with an unused Flip Flop:      11  out of     11   100%  
+   Number with an unused LUT:             0  out of     11     0%  
+   Number of fully used LUT-FF pairs:     0  out of     11     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    400     3%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 8.440ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 341 / 5
+-------------------------------------------------------------------------
+Delay:               8.440ns (Levels of Logic = 12)
+  Source:            S<0> (PAD)
+  Destination:       G<3> (PAD)
+
+  Data Path: S<0> to G<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.000   0.798  S_0_IBUF (S_0_IBUF)
+     XOR2:I0->O            3   0.053   0.739  XLXI_1/XLXI_1/XLXI_12 (XLXI_1/XLXI_1/XLXN_16)
+     AND2:I1->O            1   0.067   0.725  XLXI_1/XLXI_1/XLXI_11/XLXI_3 (XLXI_1/XLXI_1/XLXI_11/XLXN_14)
+     OR3:I1->O             3   0.067   0.753  XLXI_1/XLXI_1/XLXI_11/XLXI_5 (XLXI_1/XLXN_6)
+     AND2:I0->O            1   0.053   0.725  XLXI_1/XLXI_2/XLXI_11/XLXI_3 (XLXI_1/XLXI_2/XLXI_11/XLXN_14)
+     OR3:I1->O             3   0.067   0.753  XLXI_1/XLXI_2/XLXI_11/XLXI_5 (XLXI_1/XLXN_7)
+     AND2:I0->O            1   0.053   0.725  XLXI_1/XLXI_3/XLXI_11/XLXI_3 (XLXI_1/XLXI_3/XLXI_11/XLXN_14)
+     OR3:I1->O             3   0.067   0.753  XLXI_1/XLXI_3/XLXI_11/XLXI_5 (XLXI_1/XLXN_9)
+     XOR2:I0->O            2   0.053   0.745  XLXI_1/XLXI_4/XLXI_11/XLXI_1 (XLXN_3<3>)
+     AND2:I0->O            1   0.053   0.602  XLXI_5/XLXI_69 (XLXI_5/XLXN_70)
+     OR4:I3->O             1   0.190   0.399  XLXI_5/XLXI_70 (G_3_OBUF)
+     OBUF:I->O                 0.000          G_3_OBUF (G<3>)
+    ----------------------------------------
+    Total                      8.440ns (0.723ns logic, 7.717ns route)
+                                       (8.6% logic, 91.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.20 secs
+ 
+--> 
+
+Total memory usage is 369736 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

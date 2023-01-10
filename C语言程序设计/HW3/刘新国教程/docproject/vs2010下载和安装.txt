@@ -1,0 +1,5 @@
+VS2010学习版下载（360MB）
+https://pan.baidu.com/s/1i4EWj5r
+http://www.cad.zju.edu.cn/home/xgliu/ctopic/VS2010/VS2010Express.zip
+下载后双击运行VCExpress2010 目录中setup.exe即可
+学习版是免费的，注册码通过申请获得，或者可以（通过搜索“visual studio express 2010 注册码”获得，或者使用6VPJ7-H3CXH-HBTPT-X4T74-3YVY7）

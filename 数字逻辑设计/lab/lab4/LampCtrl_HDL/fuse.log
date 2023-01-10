@@ -1,0 +1,13 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/LampCtrl_HDL/LampCtrl_LampCtrl_sch_tb_isim_beh.exe -prj F:/LampCtrl_HDL/LampCtrl_LampCtrl_sch_tb_beh.prj work.LampCtrl_LampCtrl_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/LampCtrl_HDL/LampCtrl_HDL.vf" into library work
+Analyzing Verilog file "F:/LampCtrl_HDL/LampCtrl.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:267 - "F:/LampCtrl_HDL/LampCtrl.v" Line 34: Cannot find port clk on this module
+ERROR:HDLCompiler:25 - "F:/LampCtrl_HDL/LampCtrl.v" Line 35: Module <LampCtrl_HDL> does not have a port named <clk>.
+WARNING:HDLCompiler:1016 - "F:/LampCtrl_HDL/LampCtrl.v" Line 34: Port LED is not connected to this instance
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

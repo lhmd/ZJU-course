@@ -1,0 +1,28 @@
+Command line:
+   Counter4b_Counter4b_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  60240
+
+Mon Nov 28 16:02:10 2022
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5154.52 Meg
+
+ Total Signals          : 82
+ Total Nets             : 36
+ Total Signal Drivers   : 32
+ Total Blocks           : 17
+ Total Primitive Blocks : 15
+ Total Processes        : 49
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 125
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 4997.23 Meg
+
+Mon Nov 28 16:03:12 2022
+

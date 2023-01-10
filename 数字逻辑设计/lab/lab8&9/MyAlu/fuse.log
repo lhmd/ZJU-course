@@ -1,0 +1,27 @@
+Running: D:\exestore\xlinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/projectStore/ise/MyAlu/AddSub4b_AddSub4b_sch_tb_isim_beh.exe -prj D:/projectStore/ise/MyAlu/AddSub4b_AddSub4b_sch_tb_beh.prj work.AddSub4b_AddSub4b_sch_tb work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/projectStore/ise/MyAlu/Adder1b.vf" into library work
+Analyzing Verilog file "D:/projectStore/ise/MyAlu/AddSub1b.vf" into library work
+Analyzing Verilog file "D:/projectStore/ise/MyAlu/AddSub4b.vf" into library work
+Analyzing Verilog file "D:/projectStore/ise/MyAlu/AddSub4b_test.v" into library work
+Analyzing Verilog file "D:/exestore/xlinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160236 KB
+Fuse CPU Usage: 155 ms
+Compiling module XOR2
+Compiling module AND2
+Compiling module OR3
+Compiling module Adder1b_MUSER_AddSub4b
+Compiling module AddSub1b_MUSER_AddSub4b
+Compiling module AddSub4b
+Compiling module AddSub4b_AddSub4b_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 8 Verilog Units
+Built simulation executable D:/projectStore/ise/MyAlu/AddSub4b_AddSub4b_sch_tb_isim_beh.exe
+Fuse Memory Usage: 167972 KB
+Fuse CPU Usage: 202 ms

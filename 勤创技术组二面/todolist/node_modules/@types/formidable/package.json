@@ -1,0 +1,32 @@
+{
+    "name": "@types/formidable",
+    "version": "2.0.5",
+    "description": "TypeScript definitions for formidable",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/formidable",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Wim Looman",
+            "url": "https://github.com/Nemo157",
+            "githubUsername": "Nemo157"
+        },
+        {
+            "name": "Martin Badin",
+            "url": "https://github.com/martin-badin",
+            "githubUsername": "martin-badin"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/formidable"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/node": "*"
+    },
+    "typesPublisherContentHash": "1c16a50024730c3aa195a3732e682f00caac6ab41f1f3684f2d91242556ec3f7",
+    "typeScriptVersion": "3.9"
+}

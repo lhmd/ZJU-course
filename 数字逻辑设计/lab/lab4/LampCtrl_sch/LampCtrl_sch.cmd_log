@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "F:/LampCtrl_sch/LampCtrl_sch.xst" -ofn "F:/LampCtrl_sch/LampCtrl_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 LampCtrl_sch.ngc LampCtrl_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_sch_map.ncd LampCtrl_sch.ngd LampCtrl_sch.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl_sch_map.ncd LampCtrl_sch.ncd LampCtrl_sch.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LampCtrl_sch.twx LampCtrl_sch.ncd -o LampCtrl_sch.twr LampCtrl_sch.pcf 
+bitgen -intstyle ise -f LampCtrl_sch.ut LampCtrl_sch.ncd 
+xst -intstyle ise -ifn "F:/LampCtrl_sch/LampCtrl_sch.xst" -ofn "F:/LampCtrl_sch/LampCtrl_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 LampCtrl_sch.ngc LampCtrl_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_sch_map.ncd LampCtrl_sch.ngd LampCtrl_sch.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl_sch_map.ncd LampCtrl_sch.ncd LampCtrl_sch.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LampCtrl_sch.twx LampCtrl_sch.ncd -o LampCtrl_sch.twr LampCtrl_sch.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f LampCtrl_sch.ut LampCtrl_sch.ncd 
+xst -intstyle ise -ifn "E:/LampCtrl_sch/LampCtrl_sch.xst" -ofn "E:/LampCtrl_sch/LampCtrl_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 LampCtrl_sch.ngc LampCtrl_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_sch_map.ncd LampCtrl_sch.ngd LampCtrl_sch.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl_sch_map.ncd LampCtrl_sch.ncd LampCtrl_sch.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LampCtrl_sch.twx LampCtrl_sch.ncd -o LampCtrl_sch.twr LampCtrl_sch.pcf -ucf K7.ucf 

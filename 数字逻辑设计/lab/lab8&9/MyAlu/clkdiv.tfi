@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+clkdiv instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .clkdiv(clkdiv)
+    );
+
+

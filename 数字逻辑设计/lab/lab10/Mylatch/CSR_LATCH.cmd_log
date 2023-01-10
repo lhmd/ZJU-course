@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym CSR_LATCH D:/isepro/Mylatch/CSR_LATCH.sch D:/isepro/Mylatch/CSR_LATCH.sym 

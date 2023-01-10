@@ -1,0 +1,28 @@
+Running: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/DispNumber_sch/DispNumber_sch_isim_beh.exe -prj E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/DispNumber_sch/DispNumber_sch_beh.prj work.DispNumber_sch work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/DispNumber_sch/DispNumber_sch.vf" into library work
+Analyzing Verilog file "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160108 KB
+Fuse CPU Usage: 139 ms
+Compiling module AND4
+Compiling module AND3
+Compiling module AND2
+Compiling module INV
+Compiling module OR2
+Compiling module OR4
+Compiling module OR3
+Compiling module MyMC14495_MUSER_DispNumber_sch
+Compiling module INV4_HXILINX_DispNumber_sch
+Compiling module DispNumber_sch
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/DispNumber_sch/DispNumber_sch_isim_beh.exe
+Fuse Memory Usage: 168420 KB
+Fuse CPU Usage: 218 ms

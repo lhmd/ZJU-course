@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/Code/ComputerLogic/MyCounter/top.xst" -ofn "D:/Code/ComputerLogic/MyCounter/top.syr" 
+xst -intstyle ise -ifn "D:/Code/ComputerLogic/MyCounter/top.xst" -ofn "D:/Code/ComputerLogic/MyCounter/top.syr" 
+xst -intstyle ise -ifn "D:/Code/ComputerLogic/MyCounter/top.xst" -ofn "D:/Code/ComputerLogic/MyCounter/top.syr" 
+xst -intstyle ise -ifn "D:/Code/ComputerLogic/MyCounter/top.xst" -ofn "D:/Code/ComputerLogic/MyCounter/top.syr" 
+xst -intstyle ise -ifn "D:/Code/ComputerLogic/MyCounter/top.xst" -ofn "D:/Code/ComputerLogic/MyCounter/top.syr" 
+xst -intstyle ise -ifn "D:/Code/ComputerLogic/MyCounter/top.xst" -ofn "D:/Code/ComputerLogic/MyCounter/top.syr" 
+xst -intstyle ise -ifn "D:/Code/ComputerLogic/MyCounter/top.xst" -ofn "D:/Code/ComputerLogic/MyCounter/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 

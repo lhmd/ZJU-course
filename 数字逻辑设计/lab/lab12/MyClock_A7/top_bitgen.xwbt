@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\lab12\MyClock_A7\top.ncd
+OUTFILE=D:\lab12\MyClock_A7\top.bit
+FAMILY=Artix7
+PART=xc7a100t-2lcsg324
+WORKINGDIR=D:\lab12\MyClock_A7
+LICENSE=WebPack
+USER_INFO=__0_0_0

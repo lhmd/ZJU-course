@@ -1,0 +1,6 @@
+verilog work "SSeg7_Dev_IO.v"
+verilog work "my74LS161.v"
+verilog work "clk_1s.v"
+verilog work "clk_100ms.v"
+verilog work "clkdiv.v"
+verilog work "top.v"

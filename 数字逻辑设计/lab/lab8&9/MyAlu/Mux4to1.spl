@@ -1,0 +1,12 @@
+[Inputs]
+I0
+I1
+I2
+I3
+=s[1:0]=
+[Outputs]
+o
+[BiDir]
+[ATTRIBUTES]
+VeriModel Mux4to1
+

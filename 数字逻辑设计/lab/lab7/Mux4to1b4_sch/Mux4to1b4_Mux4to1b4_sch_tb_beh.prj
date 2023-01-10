@@ -1,0 +1,3 @@
+verilog work "Mux4to1b4.vf"
+verilog work "Mux4to1b4_sim.v"
+verilog work "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

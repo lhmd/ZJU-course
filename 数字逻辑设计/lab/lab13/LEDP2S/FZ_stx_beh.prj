@@ -1,0 +1,5 @@
+verilog isim_temp "Shfitreg9b.v"
+verilog isim_temp "ShfitReg8b.v"
+verilog isim_temp "Top.v"
+verilog isim_temp "FZ.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

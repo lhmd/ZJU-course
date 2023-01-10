@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/OneDrive - zju.edu.cn/ZJUer/DigitalLogicExp/lab12/My74LS161/my74LS161_sim_isim_beh.exe" -prj "D:/OneDrive - zju.edu.cn/ZJUer/DigitalLogicExp/lab12/My74LS161/my74LS161_sim_beh.prj" "work.my74LS161_sim" "work.glbl" 

@@ -1,0 +1,299 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DispNumber_sch_drc.vf
+// /___/   /\     Timestamp : 10/24/2022 16:50:28
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog DispNumber_sch_drc.vf -w "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab6/DispNumber_sch/DispNumber_sch.sch"
+//Design Name: DispNumber_sch
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module INV4_HXILINX_DispNumber_sch (O0, O1, O2, O3, I0, I1, I2, I3);
+    
+
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+
+   input  I0;
+   input  I1;
+   input  I2;
+   input  I3;
+
+assign O0 = !I0;
+assign O1 = !I1;
+assign O2 = !I2;
+assign O3 = !I3;
+
+endmodule
+`timescale 1ns / 1ps
+
+module MyMC14495_MUSER_DispNumber_sch(D0, 
+                                      D1, 
+                                      D2, 
+                                      D3, 
+                                      LE, 
+                                      point, 
+                                      a, 
+                                      b, 
+                                      c, 
+                                      d, 
+                                      e, 
+                                      f, 
+                                      g, 
+                                      p);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input LE;
+    input point;
+   output a;
+   output b;
+   output c;
+   output d;
+   output e;
+   output f;
+   output g;
+   output p;
+   
+   wire ND0;
+   wire ND1;
+   wire ND2;
+   wire ND3;
+   wire XLXN_12;
+   wire XLXN_30;
+   wire XLXN_31;
+   wire XLXN_32;
+   wire XLXN_35;
+   wire XLXN_41;
+   wire XLXN_43;
+   wire XLXN_46;
+   wire XLXN_48;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_63;
+   wire XLXN_64;
+   wire XLXN_65;
+   wire XLXN_66;
+   wire XLXN_67;
+   wire XLXN_68;
+   wire XLXN_69;
+   wire XLXN_71;
+   wire XLXN_72;
+   wire XLXN_74;
+   wire XLXN_75;
+   wire XLXN_76;
+   wire XLXN_79;
+   wire XLXN_102;
+   wire XLXN_106;
+   
+   AND4  AD0 (.I0(ND0), 
+             .I1(ND1), 
+             .I2(D2), 
+             .I3(D3), 
+             .O(XLXN_79));
+   AND4  AD1 (.I0(D0), 
+             .I1(D1), 
+             .I2(D2), 
+             .I3(ND3), 
+             .O(XLXN_106));
+   AND3  AD2 (.I0(ND1), 
+             .I1(ND2), 
+             .I2(ND3), 
+             .O(XLXN_102));
+   AND3  AD3 (.I0(D0), 
+             .I1(D1), 
+             .I2(ND3), 
+             .O(XLXN_76));
+   AND3  AD4 (.I0(D1), 
+             .I1(ND2), 
+             .I2(ND3), 
+             .O(XLXN_75));
+   AND3  AD5 (.I0(D0), 
+             .I1(ND2), 
+             .I2(ND3), 
+             .O(XLXN_74));
+   AND3  AD6 (.I0(D0), 
+             .I1(ND1), 
+             .I2(ND2), 
+             .O(XLXN_72));
+   AND3  AD7 (.I0(ND1), 
+             .I1(D2), 
+             .I2(ND3), 
+             .O(XLXN_71));
+   AND2  AD8 (.I0(D0), 
+             .I1(ND3), 
+             .O(XLXN_69));
+   AND4  AD9 (.I0(ND0), 
+             .I1(D1), 
+             .I2(ND2), 
+             .I3(D3), 
+             .O(XLXN_68));
+   AND3  AD10 (.I0(D0), 
+              .I1(D1), 
+              .I2(D2), 
+              .O(XLXN_67));
+   AND3  AD11 (.I0(D1), 
+              .I1(D2), 
+              .I2(D3), 
+              .O(XLXN_66));
+   AND4  AD12 (.I0(ND0), 
+              .I1(D1), 
+              .I2(ND2), 
+              .I3(ND3), 
+              .O(XLXN_65));
+   AND3  AD13 (.I0(D0), 
+              .I1(D1), 
+              .I2(D3), 
+              .O(XLXN_64));
+   AND3  AD14 (.I0(ND0), 
+              .I1(D2), 
+              .I2(D3), 
+              .O(XLXN_63));
+   AND3  AD15 (.I0(ND0), 
+              .I1(D1), 
+              .I2(D2), 
+              .O(XLXN_61));
+   AND4  AD16 (.I0(D0), 
+              .I1(ND1), 
+              .I2(D2), 
+              .I3(ND3), 
+              .O(XLXN_60));
+   AND4  AD17 (.I0(D0), 
+              .I1(D1), 
+              .I2(ND2), 
+              .I3(D3), 
+              .O(XLXN_59));
+   AND4  AD18 (.I0(D0), 
+              .I1(ND1), 
+              .I2(D2), 
+              .I3(D3), 
+              .O(XLXN_58));
+   AND4  AD19 (.I0(ND0), 
+              .I1(ND1), 
+              .I2(D2), 
+              .I3(ND3), 
+              .O(XLXN_32));
+   AND4  AD20 (.I0(D0), 
+              .I1(ND2), 
+              .I2(ND1), 
+              .I3(ND3), 
+              .O(XLXN_31));
+   INV  XLXI_1 (.I(point), 
+               .O(p));
+   OR2  XLXI_2 (.I0(LE), 
+               .I1(XLXN_12), 
+               .O(a));
+   OR2  XLXI_3 (.I0(LE), 
+               .I1(XLXN_30), 
+               .O(b));
+   OR2  XLXI_4 (.I0(LE), 
+               .I1(XLXN_48), 
+               .O(c));
+   INV  XLXI_5 (.I(D3), 
+               .O(ND3));
+   INV  XLXI_6 (.I(D2), 
+               .O(ND2));
+   INV  XLXI_7 (.I(D1), 
+               .O(ND1));
+   INV  XLXI_8 (.I(D0), 
+               .O(ND0));
+   OR4  XLXI_9 (.I0(XLXN_59), 
+               .I1(XLXN_58), 
+               .I2(XLXN_32), 
+               .I3(XLXN_31), 
+               .O(XLXN_12));
+   OR3  XLXI_31 (.I0(XLXN_79), 
+                .I1(XLXN_106), 
+                .I2(XLXN_102), 
+                .O(XLXN_41));
+   OR2  XLXI_32 (.I0(LE), 
+                .I1(XLXN_41), 
+                .O(g));
+   OR4  XLXI_33 (.I0(XLXN_76), 
+                .I1(XLXN_75), 
+                .I2(XLXN_74), 
+                .I3(XLXN_58), 
+                .O(XLXN_35));
+   OR2  XLXI_34 (.I0(LE), 
+                .I1(XLXN_35), 
+                .O(f));
+   OR3  XLXI_35 (.I0(XLXN_72), 
+                .I1(XLXN_71), 
+                .I2(XLXN_69), 
+                .O(XLXN_43));
+   OR2  XLXI_36 (.I0(LE), 
+                .I1(XLXN_43), 
+                .O(e));
+   OR4  XLXI_37 (.I0(XLXN_68), 
+                .I1(XLXN_67), 
+                .I2(XLXN_32), 
+                .I3(XLXN_31), 
+                .O(XLXN_46));
+   OR2  XLXI_38 (.I0(LE), 
+                .I1(XLXN_46), 
+                .O(d));
+   OR3  XLXI_39 (.I0(XLXN_66), 
+                .I1(XLXN_65), 
+                .I2(XLXN_63), 
+                .O(XLXN_48));
+   OR4  XLXI_41 (.I0(XLXN_64), 
+                .I1(XLXN_63), 
+                .I2(XLXN_61), 
+                .I3(XLXN_60), 
+                .O(XLXN_30));
+endmodule
+`timescale 1ns / 1ps
+
+module DispNumber_sch(BIN, 
+                      SW, 
+                      AN, 
+                      SEGMEN);
+
+    input [1:0] BIN;
+    input [7:0] SW;
+   output [3:0] AN;
+   output [7:0] SEGMEN;
+   
+   
+   MyMC14495_MUSER_DispNumber_sch  XLXI_1 (.D0(SW[0]), 
+                                          .D1(SW[1]), 
+                                          .D2(SW[2]), 
+                                          .D3(SW[3]), 
+                                          .LE(BIN[0]), 
+                                          .point(BIN[1]), 
+                                          .a(SEGMEN[0]), 
+                                          .b(SEGMEN[1]), 
+                                          .c(SEGMEN[2]), 
+                                          .d(SEGMEN[3]), 
+                                          .e(SEGMEN[4]), 
+                                          .f(SEGMEN[5]), 
+                                          .g(SEGMEN[6]), 
+                                          .p(SEGMEN[7]));
+   (* HU_SET = "XLXI_2_0" *) 
+   INV4_HXILINX_DispNumber_sch  XLXI_2 (.I0(SW[3]), 
+                                       .I1(SW[5]), 
+                                       .I2(SW[6]), 
+                                       .I3(SW[7]), 
+                                       .O0(AN[0]), 
+                                       .O1(AN[1]), 
+                                       .O2(AN[2]), 
+                                       .O3(AN[3]));
+endmodule

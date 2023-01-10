@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.xst" -ofn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.syr" 
+xst -intstyle ise -ifn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.xst" -ofn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.syr" 
+xst -intstyle ise -ifn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.xst" -ofn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.syr" 
+xst -intstyle ise -ifn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.xst" -ofn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc7a100t-csg324-3 MyAdder.ngc MyAdder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyAdder_map.ncd MyAdder.ngd MyAdder.pcf 
+xst -intstyle ise -ifn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.xst" -ofn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc7a100t-csg324-3 MyAdder.ngc MyAdder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyAdder_map.ncd MyAdder.ngd MyAdder.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc7a100t-csg324-3 MyAdder.ngc MyAdder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyAdder_map.ncd MyAdder.ngd MyAdder.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyAdder_map.ncd MyAdder.ngd MyAdder.pcf 
+xst -intstyle ise -ifn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.xst" -ofn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc7k160t-fbg676-3 MyAdder.ngc MyAdder.ngd  
+map -intstyle ise -p xc7k160t-fbg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyAdder_map.ncd MyAdder.ngd MyAdder.pcf 
+par -w -intstyle ise -ol high -mt off MyAdder_map.ncd MyAdder.ncd MyAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MyAdder.twx MyAdder.ncd -o MyAdder.twr MyAdder.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MyAdder.ut MyAdder.ncd 
+xst -intstyle ise -ifn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.xst" -ofn "F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/MyAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc7k160t-fbg676-3 MyAdder.ngc MyAdder.ngd  
+map -intstyle ise -p xc7k160t-fbg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyAdder_map.ncd MyAdder.ngd MyAdder.pcf 
+par -w -intstyle ise -ol high -mt off MyAdder_map.ncd MyAdder.ncd MyAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MyAdder.twx MyAdder.ncd -o MyAdder.twr MyAdder.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MyAdder.ut MyAdder.ncd 
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/MyAdder.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/MyAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc7k160t-fbg676-3 "MyAdder.ngc" MyAdder.ngd  
+map -intstyle ise -p xc7k160t-fbg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MyAdder_map.ncd MyAdder.ngd MyAdder.pcf 
+par -w -intstyle ise -ol high -mt off MyAdder_map.ncd MyAdder.ncd MyAdder.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml MyAdder.twx MyAdder.ncd -o MyAdder.twr MyAdder.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MyAdder.ut MyAdder.ncd 

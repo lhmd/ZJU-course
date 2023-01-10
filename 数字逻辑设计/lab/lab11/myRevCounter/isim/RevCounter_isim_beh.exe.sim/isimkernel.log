@@ -1,0 +1,28 @@
+Command line:
+   RevCounter_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57674
+
+Mon Nov 28 16:24:08 2022
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5154.52 Meg
+
+ Total Signals          : 16
+ Total Nets             : 32
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 128
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5154.52 Meg
+
+Mon Nov 28 16:24:17 2022
+

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/CreateNumber.v -lang verilog -prj MyAdder -o CreateNumber.spl -module CreateNumber -template D:/Software/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 CreateNumber.spl F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/CreateNumber.sym 
+vhdtdtfi -lib work {E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/CreateNumber.v} -lang verilog -prj MyAdder -o CreateNumber.spl -module CreateNumber -template F:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 CreateNumber.spl {E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/CreateNumber.sym} 

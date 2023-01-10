@@ -1,0 +1,92 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 1 -n
+3 -fastpaths -xml DispNumber_sch.twx DispNumber_sch.ncd -o DispNumber_sch.twr
+DispNumber_sch.pcf -ucf K7.ucf
+
+Design file:              DispNumber_sch.ncd
+Physical constraint file: DispNumber_sch.pcf
+Device,package,speed:     xc7k160t,fbg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+BIN<0>         |SEGMEN<0>      |    9.794|
+BIN<0>         |SEGMEN<1>      |    9.667|
+BIN<0>         |SEGMEN<2>      |    9.861|
+BIN<0>         |SEGMEN<3>      |    9.376|
+BIN<0>         |SEGMEN<4>      |    9.198|
+BIN<0>         |SEGMEN<5>      |    9.653|
+BIN<0>         |SEGMEN<6>      |    9.722|
+BIN<1>         |SEGMEN<7>      |    8.150|
+SW<0>          |SEGMEN<0>      |   10.619|
+SW<0>          |SEGMEN<1>      |    9.914|
+SW<0>          |SEGMEN<2>      |   10.024|
+SW<0>          |SEGMEN<3>      |   10.304|
+SW<0>          |SEGMEN<4>      |    9.620|
+SW<0>          |SEGMEN<5>      |   10.006|
+SW<0>          |SEGMEN<6>      |    9.666|
+SW<1>          |SEGMEN<0>      |   11.098|
+SW<1>          |SEGMEN<1>      |   10.618|
+SW<1>          |SEGMEN<2>      |   10.669|
+SW<1>          |SEGMEN<3>      |   11.057|
+SW<1>          |SEGMEN<4>      |   10.484|
+SW<1>          |SEGMEN<5>      |   10.485|
+SW<1>          |SEGMEN<6>      |   10.599|
+SW<2>          |SEGMEN<0>      |   11.017|
+SW<2>          |SEGMEN<1>      |   11.137|
+SW<2>          |SEGMEN<2>      |   11.247|
+SW<2>          |SEGMEN<3>      |   11.045|
+SW<2>          |SEGMEN<4>      |   10.545|
+SW<2>          |SEGMEN<5>      |   10.359|
+SW<2>          |SEGMEN<6>      |   10.562|
+SW<3>          |SEGMEN<0>      |   11.001|
+SW<3>          |SEGMEN<1>      |   10.695|
+SW<3>          |SEGMEN<2>      |   10.805|
+SW<3>          |SEGMEN<3>      |   11.089|
+SW<3>          |SEGMEN<4>      |    9.791|
+SW<3>          |SEGMEN<5>      |   10.135|
+SW<3>          |SEGMEN<6>      |   10.273|
+SW<4>          |AN<0>          |    8.671|
+SW<5>          |AN<1>          |    8.742|
+SW<6>          |AN<2>          |    8.682|
+SW<7>          |AN<3>          |    8.425|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Oct 24 17:09:17 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 494 MB
+
+
+

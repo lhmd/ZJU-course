@@ -1,0 +1,9 @@
+// Verilog instantiation template created from schematic F:\LampCtrl_sch\LampCtrl.sch - Mon Oct 10 16:09:34 2022
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   LampCtrl UUT (
+		
+   );

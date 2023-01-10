@@ -1,0 +1,1 @@
+Open the code.c file, compile and run, and wait for the results.

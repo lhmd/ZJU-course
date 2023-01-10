@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="LampCtrl_HDL.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="LampCtrl.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="LampCtrl.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="LampCtrl.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="LampCtrl.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LampCtrl.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="LampCtrl.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="LampCtrl.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="LampCtrl.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="LampCtrl_HDL.vf"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LampCtrl_HDL_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="LampCtrl_HDL_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="LampCtrl_LampCtrl_sch_tb.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="LampCtrl_LampCtrl_sch_tb.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LampCtrl_LampCtrl_sch_tb.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="LampCtrl_LampCtrl_sch_tb.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="LampCtrl_LampCtrl_sch_tb.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="LampCtrl_LampCtrl_sch_tb_envsettings.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LampCtrl_LampCtrl_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="LampCtrl_LampCtrl_sch_tb_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="LampCtrl_LampCtrl_sch_tb_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="LampCtrl_envsettings.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LampCtrl_sim_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="LampCtrl_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="LampCtrl_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1665397012" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1665397012">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665397101" xil_pn:in_ck="3243441009285340142" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1665397101">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.v"/>
+      <outfile xil_pn:name="LampCtrl_sim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1665397101" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5478275521861110758" xil_pn:start_ts="1665397101">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665397284" xil_pn:in_ck="1182005960526576770" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3187310379664508134" xil_pn:start_ts="1665397281">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl_HDL.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1665397015" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3184144771245080091" xil_pn:start_ts="1665397015">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665397284" xil_pn:in_ck="-6717211782011513138" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1665397284">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LampCtrl.v"/>
+      <outfile xil_pn:name="LampCtrl_HDL.vf"/>
+      <outfile xil_pn:name="LampCtrl_sim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1665397286" xil_pn:in_ck="-6717211782011513138" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1882216359678901798" xil_pn:start_ts="1665397284">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1665397019" xil_pn:in_ck="6323477740704911749" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7199503486772380727" xil_pn:start_ts="1665397018">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <outfile xil_pn:name="LampCtrl_HDL_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1665395926" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1665395926">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665396139" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1328031311607438630" xil_pn:start_ts="1665396139">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1665396139" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3184144771245080091" xil_pn:start_ts="1665396139">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665395926" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1665395926">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665396139" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5478275521861110758" xil_pn:start_ts="1665396139">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665395926" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-679146238375871736" xil_pn:start_ts="1665395926">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1665396139" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="503592545161640367" xil_pn:start_ts="1665396139">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1665396241" xil_pn:in_ck="3668487269069059" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-1380588417798650483" xil_pn:start_ts="1665396233">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="LampCtrl.ngr"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb.lso"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb.prj"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb.syr"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb.xst"/>
+      <outfile xil_pn:name="LampCtrl_LampCtrl_sch_tb_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1665396241" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-4668407678439778415" xil_pn:start_ts="1665396241">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+  </transforms>
+
+</generated_project>

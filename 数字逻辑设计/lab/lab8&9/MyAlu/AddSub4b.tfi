@@ -1,0 +1,13 @@
+// Verilog instantiation template created from schematic D:\projectStore\ise\MyAlu\AddSub4b.sch - Tue Oct 25 21:22:57 2022
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   AddSub4b UUT (
+		.Ctrl(    ), 
+		.A(    ), 
+		.B(    ), 
+		.S(    ), 
+		.Co(    )
+   );

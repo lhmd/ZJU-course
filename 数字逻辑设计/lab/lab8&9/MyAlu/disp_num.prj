@@ -1,0 +1,4 @@
+verilog work "Mux4to14b.vf"
+verilog work "Mux4to1.v"
+verilog work "clkdiv.v"
+verilog work "disp_num.vf"

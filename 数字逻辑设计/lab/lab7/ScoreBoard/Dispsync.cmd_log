@@ -1,0 +1,1 @@
+vhdtdtfi -lib work {E:/SOPHOMORE_AW/Digital Logic Design/lab/lab7/ScoreBoard/Dispsync.v} -lang verilog -prj ScoreBoard -o Dispsync.spl -module Dispsync -template F:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 

@@ -1,0 +1,62 @@
+
+NET "clk" LOC = AC18    | IOSTANDARD = LVCMOS18 ;
+
+# NET "sw" loc = AA10    | IOSTANDARD = LVCMOS15;
+
+# NET "segment[0]"     LOC = AB22    | IOSTANDARD = LVCMOS33;
+# NET "segment[1]"     LOC = AD24    | IOSTANDARD = LVCMOS33;
+# NET "segment[2]"     LOC = AD23    | IOSTANDARD = LVCMOS33;
+# NET "segment[3]"     LOC = Y21     | IOSTANDARD = LVCMOS33;
+# NET "segment[4]"     LOC = W20     | IOSTANDARD = LVCMOS33;
+# NET "segment[5]"     LOC = AC24    | IOSTANDARD = LVCMOS33;
+# NET "segment[6]"     LOC = AC23    | IOSTANDARD = LVCMOS33;
+# NET "segment[7]"     LOC = AA22    | IOSTANDARD = LVCMOS33;
+
+# NET "an[0]"          LOC = AD21    | IOSTANDARD = LVCMOS33;
+# NET "an[1]"          LOC = AC21    | IOSTANDARD = LVCMOS33;
+# NET "an[2]"          LOC = AB21    | IOSTANDARD = LVCMOS33;
+# NET "an[3]"          LOC = AC22    | IOSTANDARD = LVCMOS33;
+
+NET "seg_clk" LOC = M24 | IOSTANDARD = LVCMOS33;
+NET "seg_clrn" LOC = M20 | IOSTANDARD = LVCMOS33;
+NET "seg_sout" LOC = L24 | IOSTANDARD = LVCMOS33;
+NET "SEG_PEN" LOC = R18 | IOSTANDARD = LVCMOS33;
+
+# NET "LED[0]" LOC = AB26   | IOSTANDARD = LVCMOS33;
+# NET "LED[1]" LOC = W24    | IOSTANDARD = LVCMOS33;
+# NET "LED[2]" LOC = W23    | IOSTANDARD = LVCMOS33;
+# NET "LED[3]" LOC = AB25   | IOSTANDARD = LVCMOS33;
+# NET "LED[4]" LOC = AA25   | IOSTANDARD = LVCMOS33;
+# NET "LED[5]" LOC = W21    | IOSTANDARD = LVCMOS33;
+# NET "LED[6]" LOC = V21    | IOSTANDARD = LVCMOS33;
+# NET "LED[7]" LOC = W26    | IOSTANDARD = LVCMOS33;
+
+
+
+# NET "clk" LOC = E3    | IOSTANDARD = LVCMOS33 ;
+
+# NET "sw" loc = J15    | IOSTANDARD = LVCMOS33;
+
+# NET "segment[0]"     LOC = T10    | IOSTANDARD = LVCMOS33;
+# NET "segment[1]"     LOC = R10    | IOSTANDARD = LVCMOS33;
+# NET "segment[2]"     LOC = K16    | IOSTANDARD = LVCMOS33;
+# NET "segment[3]"     LOC = K13     | IOSTANDARD = LVCMOS33;
+# NET "segment[4]"     LOC = P15     | IOSTANDARD = LVCMOS33;
+# NET "segment[5]"     LOC = T11    | IOSTANDARD = LVCMOS33;
+# NET "segment[6]"     LOC = L18    | IOSTANDARD = LVCMOS33;
+# NET "segment[7]"     LOC = H15    | IOSTANDARD = LVCMOS33;
+
+# NET "an[0]"          LOC = J17    | IOSTANDARD = LVCMOS33;
+# NET "an[1]"          LOC = J18    | IOSTANDARD = LVCMOS33;
+# NET "an[2]"          LOC = T9    | IOSTANDARD = LVCMOS33;
+# NET "an[3]"          LOC = J14    | IOSTANDARD = LVCMOS33;
+
+# NET "LED[0]" LOC = H17   | IOSTANDARD = LVCMOS33;
+# NET "LED[1]" LOC = K15    | IOSTANDARD = LVCMOS33;
+# NET "LED[2]" LOC = J13    | IOSTANDARD = LVCMOS33;
+# NET "LED[3]" LOC = N14   | IOSTANDARD = LVCMOS33;
+# NET "LED[4]" LOC = R18   | IOSTANDARD = LVCMOS33;
+# NET "LED[5]" LOC = V17    | IOSTANDARD = LVCMOS33;
+# NET "LED[6]" LOC = U17    | IOSTANDARD = LVCMOS33;
+# NET "LED[7]" LOC = U16    | IOSTANDARD = LVCMOS33;
+

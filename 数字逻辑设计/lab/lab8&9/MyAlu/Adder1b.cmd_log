@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym Adder1b D:/projectStore/ise/MyAlu/Adder1b.sch D:/projectStore/ise/MyAlu/Adder1b.sym 

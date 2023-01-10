@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\LampCtrl_sch\LampCtrl_sch.ncd
+OUTFILE=F:\LampCtrl_sch\LampCtrl_sch.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=F:\LampCtrl_sch
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/LampCtrl_HDL/LampCtrl.xst" -ofn "F:/LampCtrl_HDL/LampCtrl.syr" 
+xst -intstyle ise -ifn "F:/LampCtrl_HDL/LampCtrl.xst" -ofn "F:/LampCtrl_HDL/LampCtrl.syr" 

@@ -1,0 +1,25 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\Code\ComputerLogic\ScoreBoard
+#Date/Time:
+#:T   Thu Nov 04 10:50:26 2021
+#------------------------------
+	#Reading top_map.ncd...
+	#Loading device for application Rf_Device from file '7k160t.nph' in environment D:\ISE\14.7\ISE_DS\ISE\.
+	#   "top" is an NCD, version 3.2, device xc7k160t, package ffg676, speed -1
+	#Design creation date: 2021.11.04.02.48.30
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+unselect -all
+	#4
+unselect -all
+	#5
+unselect -all

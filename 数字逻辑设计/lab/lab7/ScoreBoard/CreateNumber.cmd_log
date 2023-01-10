@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab7/ScoreBoard/CreateNumber.xst" -ofn "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab7/ScoreBoard/CreateNumber.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-fbg676-1 "CreateNumber.ngc" CreateNumber.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o CreateNumber_map.ncd CreateNumber.ngd CreateNumber.pcf 
+par -w -intstyle ise -ol high -mt off CreateNumber_map.ncd CreateNumber.ncd CreateNumber.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml CreateNumber.twx CreateNumber.ncd -o CreateNumber.twr CreateNumber.pcf 
+bitgen -intstyle ise -f CreateNumber.ut CreateNumber.ncd 

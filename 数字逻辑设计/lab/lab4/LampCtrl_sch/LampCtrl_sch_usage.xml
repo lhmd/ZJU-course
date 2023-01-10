@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="5">
+<DesignStatistics TimeStamp="Mon Oct 10 22:09:31 2022"><group name="NetStatistics">
+<item name="NumNets_Active" rev="4">
+<attrib name="value" value="15"/></item>
+<item name="NumNets_Vcc" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_BENTQUAD" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_BOUNCEIN" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_GENERIC" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_HLONG" rev="4">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_HQUAD" rev="4">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Active_IOBIN2OUT" rev="4">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="4">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_LUTINPUT" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_OUTBOUND" rev="4">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PADINPUT" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PADOUTPUT" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_PINFEED" rev="4">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_SINGLE" rev="4">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Active_VLONG" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_HVCCGNDOUT" rev="4">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Vcc_IOBIN2OUT" rev="4">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Vcc_IOBOUTPUT" rev="4">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Vcc_PADINPUT" rev="4">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Vcc_PINFEED" rev="4">
+<attrib name="value" value="7"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="5">
+<attrib name="value" value="11"/></item>
+<item name="AGG_IO" rev="5">
+<attrib name="value" value="11"/></item>
+<item name="AGG_LOCED_IO" rev="5">
+<attrib name="value" value="11"/></item>
+<item name="AGG_SLICE" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BONDED_IOB" rev="5">
+<attrib name="value" value="3"/></item>
+<item name="NUM_BONDED_IOB33" rev="5">
+<attrib name="value" value="8"/></item>
+<item name="NUM_BSLUTONLY" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BSUSED" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LOCED_IOB" rev="5">
+<attrib name="value" value="3"/></item>
+<item name="NUM_LOCED_IOB33" rev="5">
+<attrib name="value" value="8"/></item>
+<item name="NUM_LOGIC_O6ONLY" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICEL" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICE_CYINIT" rev="5">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="5">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IOB-IOB18M" rev="4">
+<attrib name="value" value="2"/></item>
+<item name="IOB-IOB18S" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="IOB33-IOB33M" rev="4">
+<attrib name="value" value="7"/></item>
+<item name="IOB33-IOB33S" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="SLICEL-SLICEM" rev="4">
+<attrib name="value" value="1"/></item>
+</group>
+</DesignStatistics>
+<ReportConfigData TimeStamp="Mon Oct 10 17:19:12 2022"><group name="IOB_INBUF_EN">
+<item name="IBUF_LOW_PWR" rev="4">
+<attrib name="TRUE" value="3"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Mon Oct 10 17:19:12 2022"><group name="SLICEL">
+<item name="D" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="D4" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="D5" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="D6" rev="4">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="OUT" rev="2">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="4">
+<attrib name="value" value="11"/></item>
+</group>
+<group name="IOB33_OUTBUF">
+<item name="IN" rev="4">
+<attrib name="value" value="8"/></item>
+<item name="OUT" rev="4">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="LUT6">
+<item name="A4" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="A5" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="A6" rev="4">
+<attrib name="value" value="1"/></item>
+<item name="O6" rev="4">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB33">
+<item name="O" rev="4">
+<attrib name="value" value="8"/></item>
+<item name="PAD" rev="4">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="IOB_INBUF_EN">
+<item name="INTERMDISABLE" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="OUT" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="PAD" rev="4">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="IOB">
+<item name="I" rev="4">
+<attrib name="value" value="3"/></item>
+<item name="PAD" rev="4">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="HARD0">
+<item name="0" rev="4">
+<attrib name="value" value="3"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

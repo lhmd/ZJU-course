@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\SOPHOMORE_AW\Digital Logic Design\lab\lab8&9\MyAlu\top.ncd
+OUTFILE=E:\SOPHOMORE_AW\Digital Logic Design\lab\lab8&9\MyAlu\top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1fbg676
+WORKINGDIR=E:\SOPHOMORE_AW\Digital Logic Design\lab\lab8&9\MyAlu
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

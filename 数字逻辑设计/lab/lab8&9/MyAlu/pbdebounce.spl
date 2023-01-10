@@ -1,0 +1,9 @@
+[Inputs]
+clk_1ms
+button
+[Outputs]
+pbreg
+[BiDir]
+[ATTRIBUTES]
+VeriModel pbdebounce
+

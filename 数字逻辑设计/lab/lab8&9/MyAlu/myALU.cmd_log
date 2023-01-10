@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/projectStore/ise/MyAlu/myALU.xst" -ofn "D:/projectStore/ise/MyAlu/myALU.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym myALU D:/projectStore/ise/MyAlu/myALU.sch D:/projectStore/ise/MyAlu/myALU.sym 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/myALU.sch myALU.tfi 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/myALU.sch myALU.tfi 
+sch2hdl -intstyle ise -family kintex7 -verilog myALU_drc.vf -w D:/projectStore/ise/MyAlu/myALU.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog myALU.vf -w D:/projectStore/ise/MyAlu/myALU.sch 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/myALU.sch myALU.tfi 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/myALU.sch myALU.tfi 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/projectStore/ise/MyAlu/myALU.sch myALU.tfi 

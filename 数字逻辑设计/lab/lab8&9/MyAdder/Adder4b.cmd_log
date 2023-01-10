@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family artix7 -refsym Adder4b F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/Adder4b.sch F:/_TOT_FILES/ZJU/A_1_Course/2_1/Digital_Logic_Design/Lab8/MyAdder/Adder4b.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Adder4b {E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/Adder4b.sch} {E:/SOPHOMORE_AW/Digital Logic Design/reference/SaltyfishXuan/Lab08/MyAdder/Adder4b.sym} 

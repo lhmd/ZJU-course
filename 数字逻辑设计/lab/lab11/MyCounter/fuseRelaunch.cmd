@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab11/MyCounter/Counter4b_Counter4b_sch_tb_isim_beh.exe" -prj "E:/SOPHOMORE_AW/Digital Logic Design/lab/lab11/MyCounter/Counter4b_Counter4b_sch_tb_beh.prj" "work.Counter4b_Counter4b_sch_tb" "work.glbl" 

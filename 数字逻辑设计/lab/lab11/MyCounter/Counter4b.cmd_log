@@ -1,0 +1,1 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Counter4b.vf -w D:/Code/ComputerLogic/MyCounter/Counter4b.sch 
