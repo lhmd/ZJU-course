@@ -1,0 +1,49 @@
+# Project: 0-drawhouse
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = ../../obj/exceptio.o ../../obj/genlib.o ../../obj/graphics.o ../../obj/linkedlist.o ../../obj/random.o ../../obj/simpio.o ../../obj/strlib.o ../../obj/0-drawhouse.o
+LINKOBJ  = ../../obj/exceptio.o ../../obj/genlib.o ../../obj/graphics.o ../../obj/linkedlist.o ../../obj/random.o ../../obj/simpio.o ../../obj/strlib.o ../../obj/0-drawhouse.o
+LIBS     = -L"D:/devC/Dev-Cpp/MinGW64/lib32" -L"D:/devC/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -mwindows -m32 -g3
+INCS     = -I"D:/devC/Dev-Cpp/MinGW64/include" -I"D:/devC/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/devC/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"../../libgraphics"
+CXXINCS  = -I"D:/devC/Dev-Cpp/MinGW64/include" -I"D:/devC/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/devC/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/devC/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"../../libgraphics"
+BIN      = ../../exe/0-drawhouse.exe
+CXXFLAGS = $(CXXINCS) -m32 -g3
+CFLAGS   = $(INCS) -m32 -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../../obj/exceptio.o: ../../libgraphics/exceptio.c
+	$(CC) -c ../../libgraphics/exceptio.c -o ../../obj/exceptio.o $(CFLAGS)
+
+../../obj/genlib.o: ../../libgraphics/genlib.c
+	$(CC) -c ../../libgraphics/genlib.c -o ../../obj/genlib.o $(CFLAGS)
+
+../../obj/graphics.o: ../../libgraphics/graphics.c
+	$(CC) -c ../../libgraphics/graphics.c -o ../../obj/graphics.o $(CFLAGS)
+
+../../obj/linkedlist.o: ../../libgraphics/linkedlist.c
+	$(CC) -c ../../libgraphics/linkedlist.c -o ../../obj/linkedlist.o $(CFLAGS)
+
+../../obj/random.o: ../../libgraphics/random.c
+	$(CC) -c ../../libgraphics/random.c -o ../../obj/random.o $(CFLAGS)
+
+../../obj/simpio.o: ../../libgraphics/simpio.c
+	$(CC) -c ../../libgraphics/simpio.c -o ../../obj/simpio.o $(CFLAGS)
+
+../../obj/strlib.o: ../../libgraphics/strlib.c
+	$(CC) -c ../../libgraphics/strlib.c -o ../../obj/strlib.o $(CFLAGS)
+
+../../obj/0-drawhouse.o: ../../src/0-drawhouse.c
+	$(CC) -c ../../src/0-drawhouse.c -o ../../obj/0-drawhouse.o $(CFLAGS)

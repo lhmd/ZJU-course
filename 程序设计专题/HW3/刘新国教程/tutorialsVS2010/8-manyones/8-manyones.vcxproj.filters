@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{74052bd6-15db-41bb-b86a-1ae8ee2bc17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libgraphics">
+      <UniqueIdentifier>{be726264-6bb5-45a7-95bb-065215b13948}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\simpleGUI\imgui.c">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgraphics\exceptio.c">
+      <Filter>libgraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgraphics\genlib.c">
+      <Filter>libgraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgraphics\graphics.c">
+      <Filter>libgraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgraphics\linkedlist.c">
+      <Filter>libgraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgraphics\random.c">
+      <Filter>libgraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgraphics\simpio.c">
+      <Filter>libgraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libgraphics\strlib.c">
+      <Filter>libgraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tutorialcode\8-manyones.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\simpleGUI\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\boolean.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\exception.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\extgraph.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\gcalloc.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\genlib.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\graphics.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\linkedlist.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\random.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\simpio.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libgraphics\strlib.h">
+      <Filter>libgraphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
