@@ -1,0 +1,18 @@
+test_data_1:
+stu_1 chinese 1 ads 5 math 2 english 3
+stu_2 ads 5 fds 3 math 4
+stu_3 MLearn 3 english 2
+#
+
+test_data_2:
+amy cour1 4 cour2 5 cour3 2
+john cour2 1 cour4 3
+tom cour1 3 cour5 3
+jerry cour6 3
+#
+
+test_data_3:
+weijie math 2 english 4 datbase 5 english 2
+zheng chinese 3 ads 5 oop 2
+zhong oop 5 ads 2 math 4
+#
