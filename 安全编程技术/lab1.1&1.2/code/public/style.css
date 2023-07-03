@@ -1,0 +1,67 @@
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 auto;
+}
+
+input[type=text] {
+    width: 600px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    
+}
+
+
+#box{
+    margin: 200px auto 0;
+    background-color:rgba(192, 192, 192, 0.3);
+    width:800px;
+    height:600px;
+}
+
+.button {
+    width: 150px;
+    height: 30px;
+    /*给这个按钮变为圆角边角*/
+    border-radius: 25px;
+    color: white;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    padding: 3px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float:right;
+}
+.todo-item {
+    
+    font-size: 24px;
+    
+}
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF00FF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #0000FF;
+    text-decoration: none;
+}

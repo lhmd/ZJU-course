@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body onload="loadEvent()">
+    <div id="box">
+        <div id="minibox">
+            <ul id="my list1">
+               <h1 class="title" style="text-align: center;">任务清单</h1>
+                <li><input id="ipt" type="text" name="search" placeholder="添加事项(同一事件一秒钟最多响应一次）">
+                    <button class="button" onclick="addEvent()">添加</button>
+                </li>
+
+            </ul>
+            
+        </div><br>
+
+        <div id="minibox2">
+            <ul>
+            <li>
+                <input id="sousuo" type="text" name="search" placeholder="筛选事项" >
+                <button class="button" id="shaixuan" onclick="search()">搜索</button>
+            </li>
+            <h2>事项列表</h2>
+            <ul id="my list2"></ul>
+            </ul>
+        </div><br>
+
+        <div id="minibox3">
+            <li><button class="button" id="deleteAll" onclick="deleteEvent(event)">清空任务</button></li>
+            <li><a href="01.jpg" target="_blank" class="inputbutton" >联系我们</a></li>
+        </div><br>
+    </div><br>
+</body>
+
+
+<script src="main.js"></script>
+
+
+</html>
