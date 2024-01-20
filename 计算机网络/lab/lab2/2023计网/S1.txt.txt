@@ -1,0 +1,138 @@
+Building configuration...
+
+Current configuration : 2994 bytes
+!
+! Last configuration change at 02:50:52 UTC Mon Jan 3 2000
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+system mtu routing 1500
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-3044032768
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-3044032768
+ revocation-check none
+ rsakeypair TP-self-signed-3044032768
+!
+!
+crypto pki certificate chain TP-self-signed-3044032768
+ certificate self-signed 01
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  69666963 6174652D 33303434 30333237 3638301E 170D3030 30313033 30373535
+  30345A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 30343430
+  33323736 3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281
+  81009256 BD906708 A599DDFC 7AF9E3F1 7FAEC509 2E7C78E9 BDC37838 1AEBFC72
+  26988A50 4D779C85 91CF11C6 8138F619 F64EB30D 9CEF7404 89137C9B 70B7BBE5
+  F0C861A4 130453B4 4517C00A 7BBD40C9 F9F096FE 8E0555BD E9709893 5AFCC10E
+  3E7FBD6C CA3184F6 1581DA28 7448357E F5CCE030 1EFC7788 7C3AC7BE 26C5CDA7
+  E4670203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603
+  551D2304 18301680 14D819D7 7844F78E 8CDF6E81 4FBB8F30 57C8A647 0F301D06
+  03551D0E 04160414 D819D778 44F78E8C DF6E814F BB8F3057 C8A6470F 300D0609
+  2A864886 F70D0101 05050003 8181006C 4D740B40 07024923 8C6ED7C7 4B102DE2
+  437BF0F1 D76D353C B85961EC EFA60D79 28BF8CFE B8BE5406 465ED56C B9A8D91A
+  1B1C0704 EF715689 6EB3B8DB A6374E55 C7863BC8 3C329778 6ECA47B5 D7C887AA
+  F1D80239 3BE40AA5 17E28872 378B158B 220D676D 4C760EB5 5D66032F 8E0A113B
+  07787D43 635963DC 56FA4399 F4DF60
+        quit
+!
+spanning-tree mode rapid-pvst
+spanning-tree extend system-id
+!
+!
+!
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/1
+ switchport mode trunk
+ spanning-tree vlan 1 port-priority 16
+!
+interface GigabitEthernet0/2
+!
+interface GigabitEthernet0/3
+!
+interface GigabitEthernet0/4
+ switchport access vlan 2
+!
+interface GigabitEthernet0/5
+ switchport access vlan 2
+ switchport mode trunk
+ spanning-tree vlan 2 port-priority 16
+!
+interface GigabitEthernet0/6
+ switchport access vlan 2
+ switchport mode trunk
+ spanning-tree vlan 2 port-priority 16
+!
+interface GigabitEthernet0/7
+ switchport access vlan 2
+!
+interface GigabitEthernet0/8
+ switchport mode trunk
+ spanning-tree vlan 1 port-priority 16
+!
+interface GigabitEthernet0/9
+!
+interface GigabitEthernet0/10
+!
+interface GigabitEthernet0/11
+!
+interface GigabitEthernet0/12
+!
+interface Vlan1
+ ip address 10.0.0.99 255.255.255.0
+!
+ip forward-protocol nd
+ip http server
+ip http secure-server
+!
+!
+!
+!
+no vstack
+!
+line con 0
+line vty 0 4
+ password 123456
+ login
+line vty 5 15
+ login
+!
+!
+end

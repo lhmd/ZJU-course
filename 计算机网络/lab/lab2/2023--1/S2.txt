@@ -1,0 +1,137 @@
+Building configuration...
+
+Current configuration : 2912 bytes
+!
+! Last configuration change at 10:47:39 UTC Fri Jan 14 2000
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Switch2
+!
+boot-start-marker
+boot-end-marker
+!
+logging console emergencies
+enable secret 5 $1$Xp5U$qmT3nEd3tqa/EVw11WOgq0
+enable password 1234
+!
+no aaa new-model
+system mtu routing 1500
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-3040559744
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-3040559744
+ revocation-check none
+ rsakeypair TP-self-signed-3040559744
+!
+!
+crypto pki certificate chain TP-self-signed-3040559744
+ certificate self-signed 01
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  69666963 6174652D 33303430 35353937 3434301E 170D3030 30313133 32313430
+  33365A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 30343035
+  35393734 3430819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281
+  8100D2DA ED7CE94E A3A7ADC5 DDD491F4 33796EEE 58234386 3132DE64 54512879
+  44E55700 6C3C8E44 DFA016E2 F7CA9FC2 CC0E886A 20D1A4B7 BF8655CB A641B556
+  96C13371 B9F842B1 8441667A 43DFC137 28785C8E 0B20C514 E13D8082 B0321BCF
+  E3C6B31F EF4065E2 E897AFE6 1D27DB83 9000BCC4 41D46BA5 37E9AABF 406B9F1F
+  69B70203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603
+  551D2304 18301680 14954044 BF61BEE5 163E3254 9C9D50BB DDE82710 8D301D06
+  03551D0E 04160414 954044BF 61BEE516 3E32549C 9D50BBDD E827108D 300D0609
+  2A864886 F70D0101 05050003 818100BF 14577444 F7FB765C 88243D58 0CEEE2AC
+  2E2BF9D6 82034D1B 9B5C581B 74690317 CAFF5A45 A249D666 349E33BF 36D71295
+  03AFEB2C 8DAC9B2C 1C55E099 041B779B 0A080E23 FB3608EA D28D0E67 4D4BC936
+  17770730 2C87B533 BE3E0CCC BAE5B546 856BBBD9 A6C463D0 A53A38CB B5741F75
+  164A4FFE CF4CD80A 2990729A B52B8C
+        quit
+!
+spanning-tree mode rapid-pvst
+spanning-tree extend system-id
+!
+!
+!
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/1
+ switchport access vlan 2
+!
+interface GigabitEthernet0/2
+!
+interface GigabitEthernet0/3
+!
+interface GigabitEthernet0/4
+!
+interface GigabitEthernet0/5
+ switchport mode trunk
+ spanning-tree vlan 1 port-priority 16
+!
+interface GigabitEthernet0/6
+!
+interface GigabitEthernet0/7
+ switchport mode trunk
+ spanning-tree vlan 2 port-priority 16
+!
+interface GigabitEthernet0/8
+!
+interface GigabitEthernet0/9
+!
+interface GigabitEthernet0/10
+!
+interface GigabitEthernet0/11
+!
+interface GigabitEthernet0/12
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip forward-protocol nd
+ip http server
+ip http secure-server
+!
+!
+!
+!
+no vstack
+!
+line con 0
+ exec-timeout 0 0
+line vty 0 4
+ password 12345
+ login
+line vty 5 15
+ password 12345
+ login
+!
+!
+end
